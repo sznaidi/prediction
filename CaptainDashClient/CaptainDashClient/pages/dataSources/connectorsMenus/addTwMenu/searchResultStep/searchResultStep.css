@@ -1,0 +1,75 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------*/
+
+.lvUsers {
+    height: 100%;
+    width: 100%;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+    .lvUsers .win-vertical .win-item {
+       cursor: default;
+       height: 70px;
+       overflow: hidden;
+       width: 100%;
+       height: 70px;
+       background-color: transparent;
+    }
+
+    .lvUsers .win-item:hover {
+        background-color: #4b3d5d;
+    }
+
+    .lvUsers > .win-vertical .win-container {
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: transparent;
+        height: 70px;
+    }
+
+    .lvUsers .win-container:hover {
+        background-color: #4b3d5d;
+        outline: rgba(255, 255, 255, 0) solid 0px;
+    }
+
+    .lvUsers .win-container.win-selected:hover {
+        background-color: #4b3d5d;
+    }
+
+.lvUsersName {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    position: relative;
+    width:100%;
+    color:#FAF8EA;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+}
+
+
+.lvUsersImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    height:32px;
+    width:32px;
+    border-radius: 5px;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
+}
+
+
+.lvUsersContent {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:11.9% 50px 1fr 11.9%;
+    -ms-grid-rows: 1fr;
+}

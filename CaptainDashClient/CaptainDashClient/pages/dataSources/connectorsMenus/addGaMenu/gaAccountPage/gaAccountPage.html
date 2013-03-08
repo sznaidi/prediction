@@ -1,0 +1,25 @@
+﻿<!--[MC] Creation date : 21/12/2012-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add Atlas connector menu</title>
+    <link href="/pages/DataSources/connectorsMenus/addGaMenu/gaAccountPage/gaAccountPage.css" rel="stylesheet" />
+    <script src="/pages/DataSources/connectorsMenus/addGaMenu/gaAccountPage/gaAccountPage.js"></script>
+</head>
+<body>
+
+
+    <div id="template_lvGoogleAccount" data-win-control="WinJS.Binding.Template" style="display: none;">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItems" data-win-bind="innerText: name;">
+            </div>
+        </div>
+    </div>
+
+    <div id="gaAccountPage" class="rightMenuContentDiv">
+        <div id="lv_googleAccount" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvGoogleAccount, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+    </div>
+
+</body>
+</html>

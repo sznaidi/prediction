@@ -1,0 +1,28 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/pages/cockpits/cockpitsMenus/formatTileStep/formatTileStep.css" rel="stylesheet" />
+    <script src="/pages/cockpits/cockpitsMenus/formatTileStep/formatTileStep.js"></script>
+</head>
+<body>
+
+    <div id="template_lvFormatTile" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs" style="">
+            <div class="rightMenuLvItems" id="div_FormatTile_cockpits">
+                  <img class="imageFormatTile" data-win-bind="src: image_url;"/>
+                    <div class="labelFormatTile"  data-win-bind="innerText: label;dataSrc:key;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_cockpit_FormatTile" class="rightMenuContentDiv">
+        <div id="lv_FormatTiles" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvFormatTile, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+    </div>
+
+
+
+</body>
+</html>

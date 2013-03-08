@@ -1,0 +1,22 @@
+﻿<!---------------------------------
+-- Author : [A.A]
+-- Creation date : 05/02/2013
+--------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add serie menu : choose connector type menu</title>
+    <script src="/pages/dataExplorer/dataExplorerMenus/addSerie/addSerieHelper.js"></script>
+    <script src="/pages/dataExplorer/dataExplorerMenus/addSerie/connectorsTypeStep/connectorsType.js"></script>
+</head>
+<body>
+    <div id="lvCategoryTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItems" data-win-bind="innerText: label;"></div>
+        </div>
+    </div>
+    <div id="lvTypeConnector" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvCategoryTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <!--css reference-->
+    <link href="/pages/dataSources/dataSources.css" rel="stylesheet" />
+    
+    <!--js reference-->
+    <link href="/pages/Search/search.css" rel="stylesheet" />
+    <script src="/pages/Search/searchHelper.js"></script>
+    <script src="/pages/Search/search.js"></script>
+    <!--<script src="/pages/Search/searchController.js"></script>-->
+</head>
+<body>
+    <div id="searchPage" class="pageTemplate">
+        <div class="topPage">
+            <button class="win-backbutton" aria-label="Back"></button>
+            <div id="div_search_topPage_label" class="topPageLabel" data-win-res="{textContent: 'div_search_topPage_label'}"></div>
+            <div id="div_searchQuery" class="searchQuery"></div>
+        </div>
+        
+        <div class="bodyPage">
+            <div class="filterPage">
+                <div id="listFilters" class="listfilter">
+                    <div id="lbl_searchPage_sourcesFilter" class="searchFilter" style="-ms-grid-column: 1;" datasrc="Sources" data-win-res="{textContent: 'lbl_searchPage_sourcesFilter'}"></div>
+                    <div id="lbl_searchPage_widgetsFilter" class="searchFilter" style="-ms-grid-column: 3;" datasrc="Widgets" data-win-res="{textContent: 'lbl_searchPage_widgetsFilter'}"></div>
+                </div>
+            </div>
+            <div class="contentPage">
+                <div class="lvSearch" id="div_lv_sources" data-win-control="WinJS.UI.ListView"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="template_connectorTile"  data-win-control="WinJS.Binding.Template">
+        <div class="connectorItem" data-win-bind="id:divId;dataSrc:divId;">
+            <div class="infoWrapper" data-win-bind="style.backgroundColor: backgroundColor;">
+                <div class="connectorTitle" data-win-bind="innerText: label"></div>
+                <div class="lblTypeConnector" data-win-bind="innerText: addType"></div>
+                <div class="connectorDate" data-win-bind="innerText: date"></div>
+                <div class="status">
+                    <div class="connectorStatus" data-win-bind="dataSrc: status; innerText: status; className: connectorStatusClass"></div>
+                    <div class="connectorStatusLoading" data-win-bind="dataSrc: statusLoad">
+                        <progress class="win-ring" style="color: rgb(236, 113, 90);"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltipConnector" data-win-bind="style.backgroundImage:tooltip; style.backgroundColor: backgroundColor;"></div>
+        </div>
+    </div>
+
+    <div id="template_connectorModel_SV" data-win-control="WinJS.Binding.Template">
+        <div class="connectorItem" data-win-bind="id:divId;dataSrc:divId;">
+            <div class="infoWrapper" data-win-bind="style.backgroundColor: backgroundColor;">
+                <div class="connectorTitle" data-win-bind="innerText: label"></div>
+                <div class="lblTypeConnector" data-win-bind="innerText: addType"></div>
+                <div class="status">
+                    <div class="connectorStatus" data-win-bind="dataSrc: status; innerText: status; className: connectorStatusClass">
+                    </div>
+                    <div class="connectorStatusLoading" data-win-bind="dataSrc: statusLoad">
+                        <progress class="win-ring" style="color: rgb(236, 113, 90)"></progress>
+                    </div>
+                </div>
+                <div class="connectorDate" data-win-bind="innerText: date">
+                </div>
+            </div>
+            <div class="tooltipConnector" data-win-bind="style.backgroundImage:tooltip; style.backgroundColor: backgroundColor;">
+            </div>
+        </div>
+    </div>
+
+    <!--Template of kpi tile-->
+    <div id="template_kpi" data-win-control="WinJS.Binding.Template">
+        <div class="itemKpi" id="itemKpi">
+            <div class="valueWrapper" data-win-bind="style.fontSize: fontSize">
+                <div class="value" data-win-bind="innerText: value" style="float: left;">
+                </div>
+                <div class="precision" data-win-bind="innerText: precision" style="float: left;">
+                </div>
+                <div class="unit" data-win-bind="innerText: unit">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="label" data-win-bind="innerText: label">
+                </div>
+                <div class="source" data-win-bind="innerHTML: typeSource">
+                </div>
+                <div class="date" data-win-bind="innerHTML: formattedDate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template of exploration tile-->
+    <div id="template_exploration" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="explorationTile">
+            <div class="label" data-win-bind="innerText: label"></div>                  
+            <svg class="containerItemExploration" style = "height:110px"></svg>
+        </div>
+    </div>
+    
+    <div id="bottomAppBar" data-win-control="WinJS.UI.AppBar" style=" background-color: #EC715A; -ms-user-select: none;" aria-label="Command Bar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRate', label:'Rate', icon:'url(/images/bottomAppBar/rate.png)', section:'selection'}"> </button>
+    </div>
+</body>
+</html>

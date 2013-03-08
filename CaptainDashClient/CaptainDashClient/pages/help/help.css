@@ -1,0 +1,381 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 08/01/2013
+------------------------------*/
+#contenthost {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 248, 234);
+}
+/*-------------------Full view ---------------*/
+.helpPage {
+    -ms-grid-columns: 45.95% 3.75% 1fr;
+    -ms-grid-rows: 1fr;
+    background-color: rgb(250, 248, 234);
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+.containerItemsHelp {
+    -ms-grid-column: 1;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 17.3% 1fr;
+    display: -ms-grid;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+    background-color: #f1eedc;
+}
+
+.topContainerItemsHelp {
+    -ms-grid-column: 1;
+    -ms-grid-columns: 5.89% 12.73% 1fr;
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-rows: 1fr;
+    height: 113px;
+    width: 100%;
+}
+
+    .topContainerItemsHelp > .win-backbutton {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: end;
+        margin-bottom: 12px;
+    }
+
+
+.helpLabel {
+    -ms-grid-column: 3;
+    -ms-grid-columns: 1fr;
+    -ms-grid-row-align: end;
+    color: rgb(236, 113, 90);
+    font-family: Segoe UI Light;
+    font-size: 40pt;
+    letter-spacing: 0.05em;
+}
+
+.helpItem {
+    height: 130px;
+    width: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 30% 1fr;
+    -ms-grid-rows: 1fr;
+    background-color: #f1eedc;
+}
+
+.infoHelpWrapper {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    height: 100%;
+    width: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 36.5px 25px 1fr;
+    background-color: transparent;
+    margin-left: -9px;
+    margin-top: 0px;
+}
+
+.helpTitle {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    height: 100%;
+    width: 100%;
+    color: #ec715a;
+    font-size: 20px;
+    font-family: 'Segoe UI Semilight';
+    margin-top: 8px;
+    margin-left: -3%;
+}
+
+.helpDescTitle {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    margin-top: 0%;
+    height: 100%;
+    width: 100%;
+    color: #78766c;
+    margin-left: -3%;
+}
+
+.helpDesc {
+    color: #4c4a43;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    height: 100%;
+    width: 100%;
+    margin-top: -11%;
+    margin-left: -3%;
+}
+
+.helpImg {
+    background-repeat: no-repeat;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    height: 85%;
+    background-size: 87% 89%;
+    padding-top: 10%;
+    width: 85%;
+    margin-top: 7.4%;
+    margin-left: 7.4%;
+}
+
+
+
+.contentContainerItems {
+    -ms-grid-row: 2;
+    -ms-grid-rows: 1fr;
+    -ms-grid-column: 1;
+    -ms-grid-columns: 16% 1fr;
+    display: -ms-grid;
+}
+
+#lv_help {
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.helpPage .win-listview > .win-viewport.win-horizontal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.containerDescriptionsHelp {
+    -ms-grid-column: 3;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 15% 1fr;
+    display: -ms-grid;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.topDescriptionSnapHelp {
+    display: none;
+}
+
+
+.topDescriptionHelp {
+    -ms-grid-columns: 50% 1fr;
+    -ms-grid-row: 1;
+    -ms-grid-rows: 51px 36px 15px;
+    display: -ms-grid;
+    height: 15%;
+}
+
+#titleDescription {
+    font-size: 26.67px;
+    font-family: 'Segoe UI Semilight';
+    width: 100%;
+    color: #78766c;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: end;
+    position: relative;
+}
+
+#subTitleDescription {
+    font-size: 14.67px;
+    font-family: 'Segoe UI Semilight';
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-align: start;
+    position: relative;
+    width: 100%;
+    color: #78766c;
+    margin-top: -3px;
+}
+
+.subTitle {
+    color: #ec715a;
+    font-size: 20px;
+    font-family: 'Segoe UI Semilight';
+    margin-top: 4%;
+}
+
+#div_help_about, #div_help_cockpit, #div_help_dataExplorer, #div_help_dataSources, #div_help_favorites {
+    -ms-grid-row: 2;
+    margin-right: 8%;
+    margin-left: 2px;
+    color: rgb(64, 51, 81);
+}
+
+#lbl_help_about_text9Container,#lbl_help_about_text10Container{
+display:-ms-grid;
+-ms-grid-columns :auto 2px 1fr;
+-ms-grid-rows:1fr;
+}
+
+#lbl_help_about_text9,#lbl_help_about_text10{
+display:-ms-grid;
+-ms-grid-column:1;
+-ms-grid-row:1;
+}
+
+/*---------------------Mode 2/3---------------------*/
+@media screen and (-ms-view-state: filled) {
+    .helpImg {
+        background-repeat: no-repeat;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        height: 59.5%;
+        background-size: 87% 89%;
+        padding-top: 10%;
+        width: 79%;
+        margin-top: 18.5%;
+        margin-left: 8.4%;
+    }
+}
+
+/*----------------------Snap view ---------------------*/
+@media screen and (-ms-view-state: snapped) {
+    #lbl_help_about_text10Container{
+display:block;
+-ms-grid-columns :auto 2px 1fr;
+-ms-grid-rows:1fr;
+}
+    .helpPage {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+        background-color: rgb(250, 248, 234);
+        display: -ms-grid;
+        height: 100%;
+        width: 100%;
+    }
+
+    .helpSnapItem {
+        height: 60px;
+        width: 100%;
+        display: -ms-grid;
+        -ms-grid-columns: 60px 1fr;
+        -ms-grid-rows: 1fr;
+        background-color: #f1eedc;
+    }
+
+    .contentContainerItems {
+        -ms-grid-row: 2;
+        -ms-grid-rows: 1fr;
+        -ms-grid-column: 1;
+        -ms-grid-columns: 4.5% 1fr;
+        display: -ms-grid;
+    }
+
+    .containerDescriptionsHelp {
+        margin-top: 17.3%;
+        -ms-grid-columns: 20px 1fr;
+        display: -ms-grid;
+        -ms-grid-row: 1;
+        -ms-grid-rows: auto 1fr;
+        -ms-grid-column: 1;
+        height:82.7%;
+    }
+
+.topDescriptionHelp{
+	display : none;
+	}
+
+    .topDescriptionSnapHelp {
+         display: -ms-grid;
+         -ms-grid-column:2;
+              -ms-grid-row: 2;
+        margin-bottom: 38px;
+        margin-top: 15px;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 0px 18px 16px;
+    }
+
+    .titleDescriptionSnap {
+        font-size: 14.67px;
+        font-family: 'Segoe UI';
+        color: #ef8c77;
+            -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    }
+
+    .subTitleDescriptionSnap {
+        font-size: 12px;
+        font-family: 'Segoe UI Semilight';
+        color: #78766c;
+        margin-top: 3px;
+            -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    }
+
+    .infoHelpSnapWrapper {
+        margin-left: 10px;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        height: 100%;
+        width: calc(100% - 10px);
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 20% 1fr;
+        background-color: transparent;
+    }
+
+    .helpSnapTitle {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: center;
+        vertical-align: baseline;
+        height: 100%;
+        width: 100%;
+        color: #ec715a;
+        font-size: 14.67px;
+        font-family: 'Segoe UI Semilight';
+        margin-top: 10px;
+    }
+
+    .helpDescSnapTitle {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        -ms-grid-row-align: center;
+        vertical-align: baseline;
+        font-size: 12px;
+        font-family: 'Segoe UI';
+        height: 30px;
+        width: 100%;
+        color: #4c4a43;
+        margin-top: 10px;
+    }
+
+    #div_help_about, #div_help_cockpit, #div_help_dataExplorer, #div_help_dataSources, #div_help_favorites {
+        font-size: 14.67px;
+        margin-right: 16px;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+    }
+
+    .subTitle {
+        font-size: 14.67px;
+    }
+
+    #div_help_topContainerItems {
+        -ms-grid-columns: 20px 37px 1fr;
+        height: 108px;
+    }
+
+        #div_help_topContainerItems .win-backbutton {
+            margin-bottom: 3px;
+        }
+
+        #div_help_topContainerItems .helpLabel {
+            font-size: 26.66px;
+            letter-spacing: 0em;
+            margin-bottom: 2px;
+        }
+
+          .helpPage .win-listview > .win-vertical .win-container {
+        margin-bottom: 15px;
+    }
+}

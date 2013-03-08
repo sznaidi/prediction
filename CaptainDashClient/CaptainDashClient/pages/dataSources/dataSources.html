@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Data sources</title>
+    <link href="/pages/dataSources/dataSources.css" rel="stylesheet" />
+    <script src="/pages/dataSources/dataSources.js"></script>
+    <script src="/pages/DataSources/connectorsMenus/connectorsMenuFactory.js"></script>
+    <script src="/pages/DataSources/connectorsCredentials/credentialsTemplate.js"></script>
+    <script src="/pages/DataSources/connectorsMenus/addAtMenu/addAtMenuHelper.js"></script>
+    <script src="/pages/DataSources/connectorsMenus/addGaMenu/addGaMenuHelper.js"></script>
+</head>
+<body>
+    <!-- S.H: The structure of Data Sources page-->
+    <div id="dataSourcesPage" class="pageTemplate">
+        <div class="topPage">
+            <button class="win-backbutton" aria-label="Back"></button>
+            <div id="div_dataSources_topPage_label" class="topPageLabel" data-win-res="{textContent: 'div_dataSources_topPage_label'}"></div>
+        </div>
+
+        <div class="bodyPage">
+            <div class="filterPage">
+                <div id="listFilters" class="listfilter">
+                    <div id="lbl_dataSourcesPage_allFilter" class="connectorFilter" style="-ms-grid-column: 1; color:#EC715A;" datasrc="All" data-win-res="{textContent: 'lbl_dataSourcesPage_allFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_gaFilter" class="connectorFilter" style="-ms-grid-column: 9;" datasrc="Google analytics" data-win-res="{textContent: 'lbl_dataSourcesPage_gaFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_twitterFilter" class="connectorFilter" style="-ms-grid-column: 11;" datasrc="Twitter" data-win-res="{textContent: 'lbl_dataSourcesPage_twitterFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_atlasFilter" class="connectorFilter" style="-ms-grid-column: 3;" datasrc="Atlas" data-win-res="{textContent: 'lbl_dataSourcesPage_atlasFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_foursquareFilter" class="connectorFilter" style="-ms-grid-column: 7;" datasrc="Foursquare" data-win-res="{textContent: 'lbl_dataSourcesPage_foursquareFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_facebookFilter" class="connectorFilter" style="-ms-grid-column: 5;" datasrc="Facebook" data-win-res="{textContent: 'lbl_dataSourcesPage_facebookFilter'}"></div>
+                    <div id="lbl_dataSourcesPage_sortBy">
+                        <div id="flyout_dataSourcesPage_sortBy" style="-ms-grid-column: 1;" data-win-res="{textContent: 'flyout_dataSourcesPage_sortBy'}"></div>
+                        <div id="div_dataSourcesPage_sortBy">
+                            <div id="lbl_dataSourcesPage_currentSortBy" style=""></div>
+                            <div id="btn_dataSourcesPage_sortBy" style=""></div>
+                        </div>
+                       <div >
+                            
+                        </div>
+                    </div>
+                </div>
+                    
+                <div id="div_dataSources_headerDefaultPage" data-win-res="{textContent: 'div_dataSources_headerDefaultPage'}"></div>
+
+                <div id="div_dataSources_allSnapView" class="allSnapView">
+                    <div class="allFilter" datasrc="All" data-win-res="{textContent: 'lbl_dataSourcesPage_allFilter'}">
+                </div>
+                </div>
+            </div>
+            <div class="contentPage" id="contentPage">
+                <div class="lvDataSources" id="lv_dataSources" data-win-control="WinJS.UI.ListView"></div>
+                <div class="lvDefaultDataSources" id="lv_defaultDataSources" data-win-control="WinJS.UI.ListView"></div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+
+    <!-- S.H: Template data source page in default view-->
+    <div id="template_defaultDataSources" data-win-control="WinJS.Binding.Template">
+        <div class="defaultConnectorItem" data-win-bind="dataFld:type"></div>
+    </div>
+
+     <!--S.H: Template data source page in normal view-->
+    <div id="template_connectorTile"  data-win-control="WinJS.Binding.Template">
+        <div class="connectorItem" data-win-bind="id:divId;dataSrc:divId;">
+            <div class="infoWrapper" data-win-bind="style.backgroundColor: backgroundColor;">
+                <div class="connectorTitle" data-win-bind="innerText: label"></div>
+                <div class="lblTypeConnector" data-win-bind="innerText: addType"></div>
+                <div class="connectorDate" data-win-bind="innerText: date"></div>
+                <div class="status">
+                    <div class="connectorStatus" data-win-bind="dataSrc: status; innerText: status; className: connectorStatusClass"></div>
+                    <div class="connectorStatusLoading" data-win-bind="dataSrc: statusLoad">
+                        <progress class="win-ring" style="color: rgb(236, 113, 90);"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltipConnector" data-win-bind="style.backgroundImage:tooltip; style.backgroundColor: backgroundColor;"></div>
+        </div>
+    </div>
+
+    <!--S.H: Template data source page in snap view-->
+    <div id="template_connectorModel_SV" data-win-control="WinJS.Binding.Template">
+        <div class="connectorItem" data-win-bind="id:divId;dataSrc:divId;">
+            <div class="infoWrapper" data-win-bind="style.backgroundColor: backgroundColor;">
+                <div class="connectorTitle" data-win-bind="innerText: label"></div>
+                <div class="lblTypeConnector" data-win-bind="innerText: addType"></div>
+                <div class="status">
+                    <div class="connectorStatus" data-win-bind="dataSrc: status; innerText: status; className: connectorStatusClass">
+                    </div>
+                    <div class="connectorStatusLoading" data-win-bind="dataSrc: statusLoad">
+                        <progress class="win-ring" style="color: rgb(236, 113, 90)"></progress>
+                    </div>
+                </div>
+                <div class="connectorDate" data-win-bind="innerText: date">
+                </div>
+            </div>
+            <div class="tooltipConnector" data-win-bind="style.backgroundImage:tooltip; style.backgroundColor: backgroundColor;">
+            </div>
+        </div>
+    </div>
+
+    <!--[sortBy Flyout]-->
+    <!-- Flyout sortBy in data source page-->
+    <!--<div id="sortByMenu" data-win-control="WinJS.UI.Menu" style="border-color:#E6E6A9;">
+        <button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'btn_dataSourcesPage_recent',label:'Recent'}" style="">
+        </button>
+        <button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'btn_dataSourcesPage_type',label:'Type'}"style="">
+        </button>
+        <button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'btn_dataSourcesPage_alphabetic',label:'Alphabetic'}" style="">
+        </button>
+    </div>-->
+
+   <!-- bottom appBar in data source page-->
+    <div class="bottomAppBar" id="div_DataSource_bottomAppBar" data-win-control="WinJS.UI.AppBar" aria-label="Command Bar">
+        <!--[A.A]AddNewSource Btn-->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdNewSource',label:'',icon:'url(/images/bottomAppBar/add.png)',section:'global'}"></button>
+        <!--[S.H] Delete Source Btn-->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDeleteSource',label:'',icon:'url(/images/bottomAppBar/delete.png)',section:'global'}"></button>
+         <!--[S.H] Rate Btn-->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRate', label:'', icon:'url(/images/bottomAppBar/rate.png)', section:'selection'}"> </button>
+    </div>
+</body>
+</html>

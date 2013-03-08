@@ -1,0 +1,30 @@
+﻿<!---------------------------------
+-- Author : [A.A]
+-- Creation date : 14/02/2013
+--------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify serie menu : graphType step</title>
+    <link href="/pages/dataExplorer/dataExplorerMenus/modifySerie/graphTypeStep/graphType.css" rel="stylesheet" />
+    <script src="/pages/dataExplorer/dataExplorerMenus/modifySerie/graphTypeStep/graphType.js"></script>
+</head>
+<body>
+
+    <!--[A.A]: lv chart type template-->
+    <div id="lvChartTypeTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="lvChartTypeContent">
+            <div class="lvChartTypeContentImg"><img data-win-bind="src : image;" /></div>
+            <div class="lvChartTypeContentLabel" data-win-bind="innerText: label;"></div>
+        </div>
+    </div>
+
+    <!-- graphType step -->
+    <div class="div_modifySerie_graphType">
+        <div id="lvChartType" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvChartTypeTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+        </div>
+    </div>
+
+</body>
+</html>

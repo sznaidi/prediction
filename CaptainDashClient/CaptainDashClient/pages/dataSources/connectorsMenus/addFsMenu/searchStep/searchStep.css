@@ -1,0 +1,36 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------*/
+
+#fsSearchStep > .rightMenuCenteredDiv {
+    -ms-grid-rows: 20px 60px 20px 50px 60px 40px;
+}
+
+#lbl_venue {
+    -ms-grid-row: 1;
+}
+
+#txt_search_venue {
+    -ms-grid-row: 2;
+}
+
+#lbl_near {
+    -ms-grid-row: 3;
+}
+
+#txt_search_near {
+    -ms-grid-row: 4;
+}
+
+#fsSearchError{
+    -ms-grid-row: 5;
+}
+
+#btn_fsSearch_Next{
+    -ms-grid-row: 6;
+}
+
+input[type=text]:-ms-input-placeholder {
+    color: #C6BFBF;
+}

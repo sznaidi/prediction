@@ -1,0 +1,70 @@
+﻿<!---------------------------------
+-- Author : [S.H]
+-- Creation date : 11/02/2013
+-------------------------------->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> pin to dashboard menu</title>
+         <link href="/pages/dataExplorer/dataExplorerMenus/pinToCockpit/pinToCockpit.css" rel="stylesheet" />
+         <script src="/pages/dataExplorer/dataExplorerMenus/pinToCockpit/pinToCockpit.js"></script>
+         <script src="/pages/dataExplorer/dataExplorerMenus/pinToCockpit/pinToCockpitHelper.js"></script>
+    </head>
+    <body>
+         <div id="div_pinToCockpitMenu_content" class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuCenteredDiv">
+                <div id="lbl_pinToCockpit_name" class="rightMenuText" data-win-res="{textContent: 'lbl_pinToCockpit_name'}"></div>
+                <input id="txt_pinToCockpit_name" type="text"/>
+                <div id="lbl_pinToCockpit_nameError" class="rightMenuErrorText" data-win-res="{textContent: 'lbl_pinToCockpit_nameError'}"></div>
+
+                <div id="lbl_pinToCockpit_setDashboard" class="rightMenuText" data-win-res="{textContent: 'lbl_pinToCockpit_setDashboard'}"></div>
+                <div id="slct_pinToCockpit_dashboard" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div>
+                <input id="txt_pinToCockpit_newDashboard" type="text" maxlength="29" />
+                <div id="btn_pinToCockpit_dashboardBack" class="btn_rightMenu_back" ></div>
+                <div id="lbl_pinToCockpit_dashboardError" class="rightMenuErrorText" data-win-res="{textContent: 'lbl_pinToCockpit_dashboardError'}"></div>
+
+                <div id="lbl_pinToCockpit_setGroup" class="rightMenuText" data-win-res="{textContent: 'lbl_pinToCockpit_setGroup'}"></div>
+                <div id="slct_pinToCockpit_group" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div>
+                <input id="txt_pinToCockpit_newGroup" type="text" maxlength="30" />
+                <div id="btn_pinToCockpit_groupBack" class="btn_rightMenu_back" ></div>
+                <div id="lbl_pinToCockpit_groupError" class="rightMenuErrorText" data-win-res="{textContent: 'lbl_pinToCockpit_groupError'}"></div>
+
+                <div id="img_pinToCockpit_separator"> 
+                  <img src="/images/rightMenu/separator.png" style="width: 100%">
+                </div>
+                <div id="lbl_pinToCockpit_tileSize" class="rightMenuText" data-win-res="{textContent: 'lbl_pinToCockpit_tileSize'}"></div>
+                <div id="div_pinToCockpit_tileSizeContent" class="blocksDiv"> 
+
+                    <div id="div_pinToCockpit_item1X1" class="selectableItem"></div>
+                    <div id="div_pinToCockpit_verticalSeparator1X1" class="verticalSeparator"></div>
+                    <div id="div_pinToCockpit_item1X2" class="selectableItem" style="background-image: url(/images/rightMenu/plusButton.png)"></div>
+
+                    <div id="div_pinToCockpit_horizontalSeparator1X1" class="horizontalSeparator"></div>
+                    <div id="div_pinToCockpit_centerSeparator1X1"></div>
+                    <div id="div_pinToCockpit_horizontalSeparator1X2"></div>
+
+                    <div id="div_pinToCockpit_item2X1" class="selectableItem" style="background-image: url(/images/rightMenu/plusButton.png)" ></div>
+                    <div id="div_pinToCockpit_verticalSeparator2X1" class="verticalSeparator"></div>
+                    <div id="div_pinToCockpit_item2X2" class="unselectableItem"></div>
+
+                    <div id="div_pinToCockpit_horizontalSeparator2X1" class="horizontalSeparator"></div>
+                    <div id="div_pinToCockpit_centerSeparator2X1"></div>
+                    <div id="div_pinToCockpit_horizontalSeparator2X2"></div>
+
+                    <div id="div_pinToCockpit_item3X1" class="selectableItem" style="background-image: url(/images/rightMenu/plusButton.png)"></div>
+                    <div id="div_pinToCockpit_verticalSeparator3X1"></div>
+                    <div id="div_pinToCockpit_item3X3" class="unselectableItem"></div>
+
+               </div>
+                <div id="txt_pinToCockpit_blockNbr">
+                    1 block
+                </div>
+                <div id="btn_pinToCockpit_pin">
+                    <button id="btn_pinToCockpit_Label" class="rightMenuBtn" data-win-res="{textContent: 'btn_pinToCockpit_Label'}">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

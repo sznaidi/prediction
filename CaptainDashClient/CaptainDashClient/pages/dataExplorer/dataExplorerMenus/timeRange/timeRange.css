@@ -1,0 +1,87 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 12/02/2013
+------------------------------*/
+
+#timeRangeContent > .rightMenuCenteredDiv {
+    -ms-grid-rows: 30px 45px 20px 60px 20px 45px 60px 40px;
+    margin-top: -70px;
+}
+
+.lbl_timeRange_subtitle {
+    font-family: Segoe UI Light;
+    -ms-grid-row-align: center;
+    color: #A49BB0;
+    font-size: 20pt;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    -ms-grid-row: 1;
+}
+
+#lbl_timeRange_period {
+    font-family: Segoe UI Light;
+    -ms-grid-row-align: center;
+    color: #A49BB0;
+    font-size: 12pt;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    -ms-grid-row: 2;
+}
+
+#lbl_timeRange_startDate {
+    -ms-grid-row: 3;
+}
+
+#date_timeRange_startDate {
+    -ms-grid-row: 4;
+    width:0px;
+}
+
+#lbl_timeRange_endDate {
+    -ms-grid-row: 5;
+}
+
+#date_timeRange_endDate {
+    -ms-grid-row: 6;
+    width:0px;
+}
+
+#lbl_timeRange_error {
+    -ms-grid-row: 7;
+}
+
+#btn_timeRange_apply {
+    -ms-grid-row: 8;
+    width:92px;
+}
+
+
+/*.win-datepicker-date {
+    margin-left: -105px;
+}
+
+.win-datepicker-month {
+    margin-left: 105px;
+}*/
+
+.win-datepicker .win-datepicker-month, .win-datepicker .win-datepicker-date, .win-datepicker .win-datepicker-year {
+    width: 83px;
+    height: 32px;
+    font-family: Segoe UI;
+    color: #4c4a43;
+    font-size: 11pt;
+}
+
+.win-datepicker .win-order0.win-datepicker-date, .win-datepicker .win-order1.win-datepicker-date, .win-datepicker .win-datepicker-month {
+    margin-right: 10px;
+}
+
+.win-datepicker .win-datepicker-date {
+    margin-left: 0px;
+}
+
+.win-datepicker .win-datepicker-year {
+    margin-left: 0px;
+}

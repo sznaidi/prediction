@@ -1,0 +1,28 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 24/12/2012
+------------------------------*/
+#fbSearchPage {
+    display:-ms-grid;
+}
+
+#fbSearchPage > .rightMenuCenteredDiv {
+    -ms-grid-rows: 20px 50px 60px 40px;
+}
+
+#fbSearchPage > .rightMenuText {
+    -ms-grid-row: 1;
+}
+
+#txt_fbSearch_input {
+    -ms-grid-row: 2;
+}
+
+#lbl_fbSearch_error {
+    -ms-grid-row: 3;
+}
+
+#btn_fbSearch_search {
+    -ms-grid-row: 4;
+}
+

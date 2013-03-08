@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>popup</title>
+</head>
+<body>
+    <!-- Title + Text + 2 buttons Confirmation Flyout. -->
+    <div id="flyout_yesNoConfirm_popup">
+        <div id="div_titleYesNo_popup" class="title"></div>
+        <div id="div_textYesNo_popup" class="text"></div>
+        <div class="yesNoButtons">
+            <button id="btn_yesConfirm_popup" class="leftButton"></button>
+            <button id="btn_noConfirm_popup" class="rightButton"></button>
+        </div>
+    </div>
+
+    <!-- Title + Text + single button Flyout. -->
+    <div id="flyout_information_popup">
+        <div id="div_titleInfo_popup" class="title"></div>
+        <div id="div_textInfo_popup" class="text"></div>
+        <button id="btn_information_popup" class="singleButton"></button>
+    </div>
+
+    <!-- Title + input field + single button Flyout. -->
+    <div id="flyout_add_popup">
+        <div id="div_titleAdd_popup" class="title">hello</div>
+        <div class="inputContainer">
+            <input id="input_add_popup" class="inputFlyout" />
+        </div>
+        <div id="div_errorInput_popup" class="inputError"></div>
+        <button id="btn_add_popup" class="singleButton"></button>
+    </div>
+        
+    <!-- selectbox -->
+    <div id="flyout_selectbox" data-win-control="WinJS.UI.Menu"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿@font-face
+{
+    font-family: "Abril Fatface";
+    src: url("/fonts/AbrilFatface-Regular.ttf");
+}
+
+.Font_AbrilFatfaceRegular
+{
+    font-family: AbrilFatface, 'Abril Fatface';
+}

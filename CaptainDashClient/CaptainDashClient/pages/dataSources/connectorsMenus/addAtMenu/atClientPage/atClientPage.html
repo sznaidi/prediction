@@ -1,0 +1,38 @@
+﻿<!--[MC] Creation date : 21/12/2012-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add Atlas connector menu</title>
+    <link href="/pages/DataSources/connectorsMenus/addAtMenu/atClientPage/atClientPage.css" rel="stylesheet" />
+    <script src="/pages/DataSources/connectorsMenus/addAtMenu/atClientPage/atClientPage.js"></script>
+</head>
+<body>
+
+    <div id="lvAtlasClientsTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItemsClient" style="">
+                <div class="radioItemContainer" style="">
+                    <div  class="radioItem" style="" data-win-bind=" id: radioId; style.backgroundImage: radioBackgroundImg;">
+                    </div>
+                </div>
+                <div class="textItem" style="" data-win-bind="innerText: Name;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="atClientPage" class="rightMenuContentDiv atClientPage">
+        <div id="lvAtlasClients" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvAtlasClientsTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+            <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuCenteredDiv">
+                    <button id="btn_atClient_Next" class="rightMenuBtn" data-win-res="{textContent: 'btn_atClient_Next'}">
+                    </button>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>

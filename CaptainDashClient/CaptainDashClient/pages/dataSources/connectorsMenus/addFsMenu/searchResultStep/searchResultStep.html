@@ -1,0 +1,25 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add Foursquare menu : Search result</title>
+        <link href="/pages/dataSources/connectorsMenus/addFsMenu/searchResultStep/searchResultStep.css" rel="stylesheet" />
+        <script src="/pages/dataSources/connectorsMenus/addFsMenu/searchResultStep/searchResultStep.js"></script>
+    </head>
+    <body>
+
+        <div id="template_lvVenues" data-win-control="WinJS.Binding.Template">
+            <div class="lvVenuesContent">
+                <div class="lvVenuesName" data-win-bind="innerText: name;"></div>
+                <div class="lvVenuesAddress" data-win-bind="innerText: address;"></div>
+                <div class="lvVenuesImg" data-win-bind="style.backgroundImage: bgImg; style.backgroundColor: bgColor;"></div>
+            </div>
+        </div>
+        <div id="lv_venues" class="lvVenues" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvVenues, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+
+    </body>
+</html>

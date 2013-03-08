@@ -1,0 +1,171 @@
+﻿/*--------------------------------
+-- Author : [S.H]
+-- Creation date : 18/01/2012
+--------------------------------*/
+#div_register_registerPageContent {
+    -ms-grid-column:3; 
+    -ms-grid-row:2;
+     -ms-grid-rows: 71px 1fr; 
+     display: -ms-grid
+}
+
+#txt_registerPage {
+    -ms-grid-row:1;
+}
+
+#inputFields {
+   -ms-grid-row:2;
+   -ms-grid-columns: 52.5% 1px 1fr;
+    display: -ms-grid;
+}
+
+#leftPart {
+ -ms-grid-column:1; 
+ -ms-grid-rows: 38px 10px 30px 10px 32px 10px 30px 10px 31px 10px 30px 10px 68px 1fr;
+  -ms-grid-row-align: center;
+ display: -ms-grid;
+}
+
+#lbl_register_firstNameLabel {
+    -ms-grid-row:1;   
+    -ms-grid-row-align: end;
+    margin-left: 2px;
+}
+
+#txt_register_firstNameValue {
+    -ms-grid-row:3; 
+    -ms-grid-row-align: end;
+    margin-left: 3px;
+}
+
+#txt_register_nameError {
+     -ms-grid-row:4;
+      width: 180%;
+}
+
+#lbl_register_pswLabel {
+    -ms-grid-row:5; 
+    -ms-grid-row-align: end;
+    margin-left: 2px;
+}
+
+#txt_register_pswValue {
+    -ms-grid-row:7; 
+    -ms-grid-row-align: end;
+    margin-left: 3px;
+}
+
+
+#txt_register_pswError {
+     -ms-grid-row:8;
+      width: 180%;
+}
+
+#lbl_register_emailLabel {
+    -ms-grid-row:9; 
+    -ms-grid-row-align: end;
+    margin-left: 2px;
+}
+
+#txt_register_emailAdress {
+    -ms-grid-row:11;
+    -ms-grid-row-align: end;
+    margin-left: 3px; 
+}
+
+
+#txt_register_emailError {
+     -ms-grid-row: 12;
+     width:180%;
+}
+
+#div_register_registerButton {
+    -ms-grid-row: 13;
+    -ms-grid-row-align: end; 
+    -ms-grid-columns: 90px 5px 50px;
+     display: -ms-grid;
+}
+
+#btn_register_register {
+     -ms-grid-column: 1; 
+     margin-left: 2px;
+}
+
+#prog_register_loadingRing {
+    -ms-grid-column: 3; 
+    -ms-grid-column-align:end;
+    display:none;
+}
+
+
+#prog_register_loadingRing progress::-ms-fill {
+    -ms-animation-name: -ms-ring;
+}
+
+#prog_register_loadingRing progress:indeterminate {
+    width: 29px;
+    height: 29px; 
+    color: #EC715A;
+}
+
+
+#rightPart {
+    -ms-grid-column: 3;
+    -ms-grid-rows: 42px 10px 30px 42px 10px 30px 41px 10px 30px 82px 1fr;
+     display: -ms-grid;
+}
+
+#lbl_register_lastNameLabel {
+    -ms-grid-row:1;
+    -ms-grid-row-align: end; 
+
+}
+#txt_register_lastNameValue {
+    -ms-grid-row:3;
+    -ms-grid-row-align: end; 
+
+}
+#lbl_register_confirmPswLabel {
+    -ms-grid-row:4;
+    -ms-grid-row-align: end; 
+
+}
+#txt_register_confirmPswValue {
+    -ms-grid-row:6;
+    -ms-grid-row-align: end; 
+
+}
+#lbl_register_confirmEmailLabel {
+    -ms-grid-row: 7;
+    -ms-grid-row-align: end; 
+
+}
+#txt_register_confirmEmail {
+    -ms-grid-row:9;
+    -ms-grid-row-align: end; 
+
+}
+
+
+@media screen and (-ms-view-state: snapped) {
+    #div_register_registerPageContent .pageTitle {
+       width:300px;
+       font-size:15pt;
+       margin-left:20px;
+    }
+    #inputFields {
+   -ms-grid-columns: 47% 1px 1fr;
+   }
+   #txt_register_firstNameValue, #txt_register_pswValue, #txt_register_emailAdress, #txt_register_lastNameValue, #txt_register_confirmPswValue, #txt_register_confirmEmail {
+     width: 131px; 
+    }
+    
+    #btn_register_register {
+     margin-left:3px;
+    }
+    .contentBackBtn {
+   -ms-grid-row:2; 
+  }
+}
+
+

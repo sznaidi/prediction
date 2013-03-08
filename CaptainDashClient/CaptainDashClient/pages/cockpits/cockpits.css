@@ -1,0 +1,317 @@
+﻿/*-------------------------------
+-- Author : [M.C]
+-- Creation date : 28/01/2013
+------------------------------*/
+
+#cockpitsPage .topPage {
+    -ms-grid-columns: 2.92% 5.68% auto 20px 50px;
+}
+
+.divPopUpGlobal #content_select_flyout {
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+#contenthost {
+    height: 100%;
+    width: 100%;
+       background-color: rgb(250, 248, 234);
+}
+
+#lbl_dashboard {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   display:block;
+   max-width:750px;
+}
+
+#div_cockpits_content {
+    -ms-grid-rows: 0px 1fr;
+}
+
+#btn_selectDashboard_cockpit {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+    display: -ms-grid;
+    -ms-grid-row-align: end;
+    background: url("/pages/cockpits/images/flyout_arrow.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 55px;
+}
+
+.lv_cockpits {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ .lv_cockpits.win-groups > .win-horizontal .win-surface {
+    margin-left: 3.5%;
+}
+    /* begin  for cockpits Selection tile*/
+    .lv_cockpits .win-selected {
+        color: rgb(255, 255, 255);
+    }
+
+    .lv_cockpits:not(.win-selectionstylefilled) .win-container.win-selected .win-selectionborder {
+        border-color: #EC715A;
+    }
+
+    .lv_cockpits:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectionborder {
+        border-color: #EC715A;
+    }
+
+
+    .lv_cockpits:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground {
+        border-top-color: #EC715A;
+        border-right-color: #EC715A;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .lv_cockpits:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectioncheckmarkbackground {
+        border-top-color: #EC715A;
+        border-right-color: #EC715A;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+.itemKpi {
+    background-color: #f1eedc;
+    display: -ms-grid;
+    -ms-grid-columns: 20px 1fr;
+    -ms-grid-rows: 56px 1fr;
+    left: 75px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+    .itemKpi .valueWrapper {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        color: #4c4a43;
+        font-family: 'Abril Fatface';
+        font-size: 30pt;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .itemKpi .footer {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        font-size: 11pt;
+    }
+
+        .itemKpi .footer .label {
+            font-family: 'Segoe UI';
+            color: #4c4a43;
+            font-size: 17.33px;
+            max-height: 50px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            padding-top: 1px;
+        }
+         
+
+        .itemKpi .footer .source {
+            font-family: 'Segoe UI Light';
+            color: #bab7a3;
+            font-size: 14.66px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .itemKpi .footer .date {
+            font-family: 'Segoe UI Light';
+            color: #bab7a3;
+            font-size: 14.66px;
+        }
+
+.highlighted {
+    background-color: #ebc24b;
+}
+
+    .highlighted .valueWrapper {
+        color: #faf8ea;
+    }
+
+    .highlighted .footer .label {
+        color: #faf8ea;
+        font-family: 'Segoe UI';
+        font-size: 17.33px;
+    }
+
+    .highlighted .footer .source {
+        color: #a8882d;
+        font-family: 'Segoe UI Light';
+        font-size: 14.66px;
+    }
+
+    .highlighted .footer .date {
+        color: #a8882d;
+        font-family: 'Segoe UI Light';
+        font-size: 14.66px;
+    }
+
+.group {
+    color: #ec7963;
+    font-family: Segoe UI Light;
+    font-size: 20pt;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.35;
+}
+
+.itemWidgetText {
+    color: #4c4a43;
+}
+
+    .itemWidgetText .label {
+        font-family: 'Abril Fatface';
+        font-size: 15pt;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .itemWidgetText .text {
+        font-family: 'Cambria';
+        font-size: 11pt;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .itemWidgetText .dateOfPub {
+        font-size: 11pt;
+        font-family: 'Segoe UI Light';
+        color: #cecbbb;
+    }
+
+.explorationTile {
+    color: #4c4a43;
+     width: 100%;
+    height: calc(100% - 20px);
+}
+
+/*.explorationTile .contentLabelSize {
+    width: 100%;
+    height: calc(100% - 20px);
+}*/
+
+   .explorationTile .label {
+        color: #4c4a43;
+        font-size: 11pt;
+        font-family: 'Segoe UI';
+        height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 280px;
+        padding: 10px;
+    }
+
+
+    .explorationTile .containerItemExploration {
+        width: 100%;
+        height: 100%;
+    }
+
+
+.fluxTwitterItem {
+    overflow: hidden;
+}
+
+    .fluxTwitterItem .label {
+        color: #4c4a43;
+        font-size: 15pt;
+        font-family: 'Segoe UI';
+        height: 35px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+.twitterContainer {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+}
+
+
+    .twitterContainer .label {
+        font-family: Abril Fatface;
+        text-transform: uppercase;
+    }
+
+.tweet {
+    width: 95%;
+    display: -ms-grid;
+    -ms-grid-rows: auto 40px;
+    -ms-grid-columns: 1fr;
+    margin-top: 15px;
+}
+
+    .tweet .text {
+        margin-top: -20px;
+        color: #52433c;
+        font-size: 10pt;
+        font-family: 'Cambria';
+        font-style: italic;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis ellipsis;
+        line-height: 17px;
+    }
+
+    .tweet .footer {
+        color: #c3bfa7;
+        font-size: 13px;
+        -ms-grid-column: 1;
+        font-family: 'Segoe UI Light';
+        -ms-grid-row: 2;
+        margin-top: 10px;
+    }
+
+.itemWidgetText .containerSize {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    #btn_selectDashboard_cockpit {
+    height: 40px;
+}
+    #div_cockpits_content {
+        -ms-grid-rows: 35px 1fr;
+    }
+
+    .contentPage {
+        -ms-grid-column: 2;
+        -ms-grid-columns: 100%;
+        height: 100%;
+        width: 100%;
+        -ms-grid-row: 2;
+        display: -ms-grid;
+    }
+
+    .lv_cockpits {
+        height: 96%;
+        margin-left: 0%;
+        width: 298px;
+    }
+    #lbl_dashboard {
+        display:block;
+    max-width:200px;
+    }
+}

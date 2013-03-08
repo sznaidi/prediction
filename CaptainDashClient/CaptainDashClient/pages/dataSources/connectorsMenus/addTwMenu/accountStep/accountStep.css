@@ -1,0 +1,25 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 21/12/2012
+------------------------------*/
+
+#twAccountStep > .rightMenuCenteredDiv {
+    -ms-grid-rows: 20px 50px 60px 40px;
+}
+
+
+#twAccountStep > .rightMenuText {
+    -ms-grid-row: 1;
+}
+
+#txt_twAccount_username {
+    -ms-grid-row: 2;
+}
+
+#lbl_twAccount_error {
+    -ms-grid-row: 3;
+}
+
+#btn_twAccount_Next {
+    -ms-grid-row: 4;
+}

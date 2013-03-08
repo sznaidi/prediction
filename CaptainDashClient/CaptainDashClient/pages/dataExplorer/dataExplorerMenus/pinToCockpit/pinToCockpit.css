@@ -1,0 +1,188 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 11/02/2013
+------------------------------*/
+#div_pinToCockpitMenu_content > .rightMenuCenteredDiv {
+  -ms-grid-rows: 18px 42px 36px 18px 42px 36px 18px 42px 36px 35px 15px 195px 40px 1fr;
+  margin-top: 0px;
+  display: -ms-grid;
+}
+
+#lbl_pinToCockpit_name {
+    -ms-grid-row: 1;
+}
+
+#txt_pinToCockpit_name {
+    -ms-grid-row: 2;
+}
+
+#lbl_pinToCockpit_nameError {
+    -ms-grid-row: 3;
+}
+
+#lbl_pinToCockpit_setDashboard {
+    -ms-grid-row: 4;
+}
+
+#slct_pinToCockpit_dashboard {
+    -ms-grid-row: 5;
+}
+
+#txt_pinToCockpit_newDashboard {
+    -ms-grid-row: 5;
+    width:calc(100% - 40px);
+    display: none;
+}
+#btn_pinToCockpit_dashboardBack {
+    -ms-grid-row: 5;
+    -ms-grid-column-align: end;
+    width:32px;
+    margin-left:8px;
+    margin-top:6px;
+    display: none;
+}
+
+#lbl_pinToCockpit_dashboardError {
+    -ms-grid-row: 6;
+}
+
+
+#lbl_pinToCockpit_setGroup {
+    -ms-grid-row: 7;
+}
+
+#slct_pinToCockpit_group {
+    -ms-grid-row: 8;
+    /*display: none;*/
+}
+
+#txt_pinToCockpit_newGroup {
+    -ms-grid-row: 8;
+    width:calc(100% - 40px);
+    display: none;
+}
+#btn_pinToCockpit_groupBack {
+    -ms-grid-row: 8;
+    -ms-grid-column-align: end;
+    width:32px;
+    margin-left:8px;
+    margin-top:6px;
+    display: none;
+
+}
+
+#lbl_pinToCockpit_groupError {
+    -ms-grid-row: 9;
+}
+#img_pinToCockpit_separator {
+    -ms-grid-row: 10;
+}
+
+#lbl_pinToCockpit_tileSize {
+    -ms-grid-row: 11;
+}
+
+#div_pinToCockpit_tileSizeContent {
+    -ms-grid-row: 12;
+    margin-top: 10px;
+}
+
+
+#div_pinToCockpit_item1X1 {
+    -ms-grid-column: 1; 
+    -ms-grid-row: 1; 
+    background-color: rgb(236, 113, 90);
+    border-color: rgb(236, 113, 90);
+}
+
+#div_pinToCockpit_verticalSeparator1X1 {
+    -ms-grid-column: 2; 
+    -ms-grid-row: 1;
+}
+
+#div_pinToCockpit_item1X2 {
+    -ms-grid-column: 3; 
+    -ms-grid-row: 1;
+}
+
+#div_pinToCockpit_horizontalSeparator1X1 {
+    -ms-grid-column: 1; 
+    -ms-grid-row: 2;
+}
+
+#div_pinToCockpit_centerSeparator1X1 {
+    -ms-grid-column: 2; 
+    -ms-grid-row: 2; 
+}
+
+#div_pinToCockpit_horizontalSeparator1X2 {
+    -ms-grid-column: 3;
+     -ms-grid-row: 2;
+}
+
+#div_pinToCockpit_item2X1 {
+    -ms-grid-column: 1; 
+    -ms-grid-row: 3;
+    background-image: url(/images/rightMenu/plusButton.png);
+    background-repeat: no-repeat;
+}
+
+#div_pinToCockpit_verticalSeparator2X1 {
+    -ms-grid-column: 2; 
+    -ms-grid-row: 3;
+}
+
+#div_pinToCockpit_item2X2 {
+    -ms-grid-column: 3; 
+    -ms-grid-row: 3;
+
+}
+
+#div_pinToCockpit_horizontalSeparator2X1 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+}
+#div_pinToCockpit_centerSeparator2X1 {
+    -ms-grid-column: 2;
+     -ms-grid-row: 4;
+      /*width: 10px;*/
+}
+
+#div_pinToCockpit_horizontalSeparator2X2 {
+    -ms-grid-column: 3; 
+    -ms-grid-row: 4;
+}
+#div_pinToCockpit_item3X1 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+    background-color: rgb(75, 61, 93);
+    background-image: url('/images/rightMenu/plusButton.png');
+    background-repeat: no-repeat;
+}
+
+#div_pinToCockpit_verticalSeparator3X1 {
+    -ms-grid-column: 2; 
+    -ms-grid-row: 5; 
+    width: 10px;
+}
+
+#div_pinToCockpit_item3X3 {
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+}
+
+#txt_pinToCockpit_blockNbr {
+   -ms-grid-row: 13;
+   -ms-grid-row-align: start;
+}
+
+#btn_pinToCockpit_pin {
+   -ms-grid-row: 14;
+   -ms-grid-row-align: start;
+}
+
+#txt_pinToCockpit_blockNbr {
+   color: #a49bb0;
+   font-size:10pt;
+   font-family: 'Segoe UI';
+}

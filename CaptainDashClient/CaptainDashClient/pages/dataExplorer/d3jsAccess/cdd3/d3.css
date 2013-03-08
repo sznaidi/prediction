@@ -1,0 +1,591 @@
+﻿
+/********************
+ * HTML CSS 
+ */
+
+#div_dataExplorer_Container g.y.axis line {
+stroke-dasharray: 5,5;
+stroke-linecap: round;
+stroke:#d0cdc2;
+}
+
+
+g.y.axis line {
+stroke-dasharray: 3,4;
+stroke-linecap: round;
+stroke:#d0cdc2;
+stroke-width:1;
+}
+
+.chartWrap {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    fill: none;
+    pointer-events: none;
+}
+
+
+/********************
+ * TOOLTIP CSS 
+ */
+
+.cdtooltip {
+    position: absolute;
+    color: #000;
+    background-color: #FAF8EA;
+    padding: 10px;
+    border: none;
+    z-index: 10000;
+
+    font-size: 13px;
+
+    transition: opacity 500ms linear;
+    -moz-transition: opacity 500ms linear;
+    -webkit-transition: opacity 500ms linear;
+
+    transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -webkit-transition-delay: 500ms;
+
+    pointer-events: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cdtooltip h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.cdtooltip p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.cdtooltip span {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+
+/********************
+ * SVG CSS 
+ */
+
+
+svg {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: none;
+}
+
+
+svg text {
+    font: 12px sans-serif;
+}
+
+svg .title {
+    font: bold 14px Arial;
+}
+
+/**********
+*  Brush
+*/
+
+.brush .extent {
+    stroke: #666;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+
+
+/**********
+*  Legend
+*/
+
+.legend .series {
+    cursor: pointer;
+}
+
+.legend .disabled circle.legendicon,  .legend .disabled rect.legendicon {
+    fill-opacity: 0;
+}
+
+
+
+/**********
+*  Axes
+*/
+
+.axis path {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .75;
+    shape-rendering: crispEdges;
+}
+
+.axis path.domain {
+    stroke-opacity: .75;
+}
+
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .25;
+    shape-rendering: crispEdges;
+}
+
+.axis line.zero {
+    stroke-opacity: .75;
+}
+
+.axis .axisMaxMin text {
+    font-weight: bold;
+}
+
+
+/**********
+*  Brush
+*/
+
+.brush .resize path {
+    fill: #eee;
+    stroke: #666;
+}
+
+
+
+/**********
+*  Bars
+*/
+
+.bars .negative rect {
+    zfill: brown;
+    cursor: pointer;
+}
+
+.bars rect {
+    zfill: steelblue;
+    cursor: pointer;
+}
+
+.bars rect:hover {
+    fill-opacity: 1;
+}
+
+.bars .hover rect {
+    fill: lightblue;
+}
+
+.bars text {
+    fill: rgba(0,0,0,0);
+}
+
+.bars .hover text {
+    fill: rgba(0,0,0,1);
+}
+
+.x.axis text {
+    transform: rotate(90);
+}
+
+
+/**********
+*  Bars
+*/
+
+.multibar .groups rect,
+.multibarHorizontal .groups rect,
+.discretebar .groups rect {
+    stroke-opacity: 0;
+    fill-linejoin: round;
+    stroke-linejoin: round;
+}
+
+.multibar .groups rect:hover,
+.multibarHorizontal .groups rect:hover,
+.discretebar .groups rect:hover {
+    fill-opacity: 1;
+    stroke-width: 6px;
+    stroke-opacity: .3;
+}
+
+.discretebar .groups text,
+.multibarHorizontal .groups text {
+    font-weight: bold;
+    fill: rgba(0,0,0,1);
+    stroke: rgba(0,0,0,0);
+}
+
+/***********
+*  Pie Chart
+*/
+
+.pie path {
+    stroke-opacity: 0;
+
+    transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+    -moz-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+    -webkit-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+
+}
+
+.pie .slice text {
+    stroke: #000;
+    stroke-width: 0;
+}
+
+.pie path {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-opacity: 1;
+}
+
+.pie .hover path {
+    fill-opacity: .7;
+    /*
+      stroke-width: 6px;
+      stroke-opacity: 1;
+    */
+}
+
+/**********
+* Lines 
+*/
+
+.groups path.line {
+    fill: none;
+    stroke-width: 2.5px;
+    stroke-linecap: round;
+    shape-rendering: geometricPrecision;
+
+    /*
+    transition: stroke-width 250ms linear;
+    -moz-transition: stroke-width 250ms linear;
+    -webkit-transition: stroke-width 250ms linear;
+  
+    transition-delay: 250ms
+    -moz-transition-delay: 250ms;
+    -webkit-transition-delay: 250ms;
+    */
+}
+
+.line.hover path {
+    stroke-width: 6px;
+}
+
+/*
+.scatter .groups .point {
+  fill-opacity: 0.1;
+  stroke-opacity: 0.1;
+}
+  */
+
+.line .scatter .groups .point {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+
+.groups .point {
+    transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+    -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+    -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+
+.scatter .groups .point.hover,
+ .groups .point.hover {
+     stroke-width: 20px;
+     fill-opacity: .5 !important;
+     stroke-opacity: .5 !important;
+ }
+
+.point-paths path {
+    stroke: #aaa;
+    stroke-opacity: 0;
+    fill: #eee;
+    fill-opacity: 0;
+}
+
+
+.groups path.line.dotted {
+    stroke-dasharray: .5,5;
+    stroke-linecap: round;
+}
+
+.indexLine {
+    cursor: ew-resize;
+}
+
+
+/**********
+* Distribution 
+*/
+
+.distribution {
+    pointer-events: none;
+}
+
+
+
+/**********
+*  Scatter 
+*/
+
+.groups .point.hover {
+    stroke-width: 20px;
+    stroke-opacity: .5;
+}
+
+.scatter .point.hover {
+    fill-opacity: 1;
+}
+
+.group.hover .point {
+    fill-opacity: 1;
+}
+
+/**********
+*  Stacked Area
+*/
+
+.stackedarea path.area {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+
+.stackedarea path.area.hover {
+    fill-opacity: .9;
+}
+
+.stackedarea .groups .point {
+    stroke-opacity: 0;
+    fill-opacity: 0;
+}
+
+.stackedarea .groups .point.hover {
+    stroke-width: 20px;
+    stroke-opacity: .75;
+    fill-opacity: 1;
+}
+
+
+
+/**********
+*  Line Plus Bar
+*/
+
+.linePlusBar .bar rect {
+    fill-opacity: .75;
+}
+
+.linePlusBar .bar rect:hover {
+    fill-opacity: 1;
+}
+
+
+/**********
+*  Bullet
+*/
+
+.bullet { font: 10px sans-serif; cursor: pointer; }
+.bullet rect { fill-opacity: .6; }
+.bullet rect:hover { fill-opacity: 1; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #ddd; }
+.bullet .range.s2 { fill: #ccc; }
+.bullet .measure.s0 { fill: steelblue; }
+.bullet .measure.s1 { fill: darkblue; }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+
+
+
+/**********
+* Sparkline plus 
+*/
+
+.sparklineplus .hoverValue line {
+    stroke: #f44;
+    stroke-width: 1.5px;
+}
+
+.sparklineplus,
+.sparklineplus g {
+    pointer-events: all;
+}
+
+.hoverArea {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+}
+
+.sparklineplus .xValue,
+.sparklineplus .yValue {
+    stroke: #666;
+    font-size: .5em;
+    font-weight: normal;
+}
+
+.sparklineplus .yValue {
+    stroke: #f66;
+}
+
+
+
+/**********
+* Indented Tree
+*/
+
+
+.indentedtree .name {
+    margin-left: 5px;
+}
+
+.indentedtree .childrenCount {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.indentedtree .treeicon {
+    cursor: pointer;
+    /*
+    cursor: n-resize;
+    */
+}
+
+.indentedtree .treeicon.folded {
+    cursor: pointer;
+    /*
+    cursor: s-resize;
+    */
+}
+
+.indentedtree .clickable {
+    color: #08C;
+    cursor: pointer;
+}
+
+.indentedtree span.clickable:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+
+.axis {
+    fill: rgb(199, 194, 176);
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #eae6d1;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.x .axis path, .x .axis line {
+    stroke: black;
+}
+
+.axis path.domain, .axis line.zero {
+    stroke: none;
+}
+
+.x .axis path.domain {
+    stroke: #4c4a43;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+}
+
+.x .axis {
+    transform: translate(2,0);
+}
+
+circle.circlezone {
+    fill: #4c4a43;
+}
+
+rect.rectzone {
+    fill: #eae6d1;
+    fill-opacity: 1;
+}
+
+line.linezone {
+    stroke: #FAF8EC;
+    stroke-width: 2px;
+}
+
+circle.tick {
+    fill: #FAF8EC;
+    fill-opacity: 1;
+    stroke: #4c4a43;
+    stroke-width: 2px;
+}
+
+.y .axis text {
+    font-family: 'Segoe', 'Verdana';
+    font-size: 15px;
+    fill: #c7c2b0;
+}
+
+.x .axis text {
+    font-family: 'Segoe', 'Verdana';
+    font-size: 15px;
+    fill: #4c4a43;
+}
+
+.arrow {
+    fill: rgb(76, 74, 67);
+    stroke: rgb(76, 74, 67);
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+    fill: white;
+    stroke-width: 1px;
+}
+
+text.value-1 {
+    font-family: 'Segoe', 'Verdana';
+    font-size: 40px;
+    font-weight: 'bold';
+}
+
+text.value-2 {
+    font-family: 'Segoe', 'Verdana';
+    font-size: 25px;
+}
+
+.y .axis .unit text {
+    font-family: 'Segoe', 'Verdana';
+    font-size: 15px;
+    fill: #4c4a43;
+}
+
+/* * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}*/

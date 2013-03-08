@@ -1,0 +1,23 @@
+﻿<!-------------------------------
+-- Author : [S.H]
+-- Creation date : 24/12/2012
+------------------------------->
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <title>fb connectors Type</title>
+        <script src="/pages/dataSources/connectorsMenus/addFbMenu/connectorsTypeStep/connectorsTypeStep.js"></script>
+         <script src="/pages/dataSources/connectorsMenus/addFbMenu/addFbMenuHelper.js"></script>
+    </head>
+    <body>
+        <!-- Connector type page : 24/12/2012-->
+        <div id="template_lvFbConnectorType" data-win-control="WinJS.Binding.Template">
+            <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuLvItems" data-win-bind="innerText: label;"></div>
+            </div>
+        </div>
+        <div id="lv_fbConnectorType" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvFbConnectorType, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+        </div>
+
+    </body>
+ </html>

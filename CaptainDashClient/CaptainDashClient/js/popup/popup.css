@@ -1,0 +1,278 @@
+﻿
+.divPopUpGlobal .win-flyout.win-ui-light, .win-ui-light .win-flyout {
+    z-index: 1008;
+    position: fixed;
+    padding: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e6e6a9;
+    background-color: #ffffcd;
+    margin: 5px;
+    min-width: 26px; /* 70px - padding - border = 26px */
+    max-width: 466px; /* 510px - padding - border = 466px */
+    min-height: 5px; /* 54px - padding - border = 5px */
+    max-height: calc(100% - 59px); /* 768px - margin - padding - border = 709px */
+    height: auto;
+    overflow: visible;
+    -ms-touch-select: none;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.divPopUpGlobal .win-flyout.win-leftalign {
+    margin-left: 0;
+}
+
+.divPopUpGlobal .win-flyout.win-rightalign {
+    margin-right: 0;
+}
+
+.divPopUpGlobal .win-flyout.win-scrolls {
+    overflow: auto;
+}
+
+.divPopUpGlobal .win-flyout.win-ui-light button {
+    background-color: #ebc24b;
+    border-width: 0px;
+    border-color: #e6e6a9;
+    color: #4c4a43;
+    width: 85px;
+    min-width: 85px;
+    font-weight: normal;
+}
+
+    .divPopUpGlobal .win-flyout.win-ui-light button:hover {
+        background-color: #be9726;
+        border-width: 2px;
+        border-color: #d6ae3c;
+        color: #ffffcd;
+    }
+
+    .divPopUpGlobal .win-flyout.win-ui-light button:active, .divPopUpGlobal .win-flyout.win-ui-light button:active:hover {
+        background-color: #ebc24b;
+        border-width: 2px;
+        border-color: #d6ae3c;
+        color: #4c4a43;
+    }
+
+.divPopUpGlobal input {
+    background-color: #f0f0b9;
+    border-width: 0px;
+    width: 218px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+
+.divPopUpGlobal #flyout_add_popup {
+    display: -ms-grid;
+    -ms-grid-columns: 19px 221px 20px;
+    -ms-grid-rows: 33px 39px 72px;
+    overflow: hidden;
+    height: auto;
+    width: 260px;
+}
+
+    .divPopUpGlobal #flyout_add_popup .title {
+        color: #d9d9a3;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: end;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+
+    .divPopUpGlobal #flyout_add_popup .inputContainer {
+        color: #d9d9a3;
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        -ms-grid-row-align: end;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+    }
+
+    .divPopUpGlobal #flyout_add_popup .inputError {
+        color: red;
+        visibility: hidden;
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+        -ms-grid-row-align: start;
+    }
+
+    .divPopUpGlobal #flyout_add_popup .singleButton {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: end;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        margin-bottom: 7px;
+    }
+
+.divPopUpGlobal #flyout_information_popup {
+    display: -ms-grid;
+    -ms-grid-columns: 19px 221px 20px;
+    -ms-grid-rows: 50px 70px 60px;
+    overflow: hidden;
+    height: auto;
+    width:260px;
+}
+
+    .divPopUpGlobal #flyout_information_popup .title {
+        color: #4c4a43;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: center;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.01em;
+        margin-top: 2px;
+    }
+
+    .divPopUpGlobal #flyout_information_popup .text {
+        color: #4c4a43;
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        -ms-grid-row-align: center;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.02em;
+    }
+
+    .divPopUpGlobal #flyout_information_popup .singleButton {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: end;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.01em;
+        margin-bottom: 10px;
+    }
+
+.divPopUpGlobal #flyout_yesNoConfirm_popup {
+    display: -ms-grid;
+    -ms-grid-columns: 19px 221px 20px;
+    -ms-grid-rows: 50px 70px 60px;
+    overflow: hidden;
+    height: auto;
+    width:260px;
+}
+
+    .divPopUpGlobal #flyout_yesNoConfirm_popup .title {
+        color: #4c4a43;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: center;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.01em;
+        margin-top: 2px;
+    }
+
+    .divPopUpGlobal #flyout_yesNoConfirm_popup .text {
+        color: #4c4a43;
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        -ms-grid-row-align: center;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.02em;
+    }
+
+    .divPopUpGlobal #flyout_yesNoConfirm_popup .yesNoButtons {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+        -ms-grid-row-align: center;
+        font-family: 'Segoe UI';
+        font-size: 14.5px;
+        letter-spacing: 0.01em;
+        margin-bottom: 10px;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 2fr 2fr;
+    }
+
+        .divPopUpGlobal #flyout_yesNoConfirm_popup .yesNoButtons .leftButton {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: center;
+        }
+
+        .divPopUpGlobal #flyout_yesNoConfirm_popup .yesNoButtons .rightButton {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: center;
+        }
+
+.divPopUpGlobal #flyout_selectbox {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: normal;
+    display: block;
+}
+
+.divPopUpGlobal #flyout_selectbox .win-command {
+    width: 100%;
+    background-color: #ffffcd;
+    font-family: Segoe UI;
+    font-size: 11pt;
+    width: 100%;
+    height: 40px;
+    color: #4c4a43;
+    white-space:  nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: normal;
+    padding-left: 10px;
+}
+
+.divPopUpGlobal #flyout_selectbox .win-command:active, .divPopUpGlobal #flyout_selectbox .win-command:hover {
+    background-color: #ebc24b;
+    color: #4c4a43;
+}
+
+.divPopUpGlobal .select_item {
+    display: -ms-grid;
+    -ms-grid-column: 1;
+    background-color: #ffffcd;
+    font-family: Segoe UI;
+    font-size: 11pt;
+    width: 100%;
+    height: 40px;
+    -ms-grid-columns: 20px 1fr 20px;
+    -ms-grid-rows: 12px 1fr;
+    color: #4c4a43;
+}
+
+.divPopUpGlobal .select_item:hover,.divPopUpGlobal .select_item:active {
+    background-color: #ebc24b;
+    color: #4c4a43;
+}
+
+.divPopUpGlobal .select_item_content {
+    height: 40px;
+    width: 100%;
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    overflow: hidden;
+}
+
+.divPopUpGlobal #content_select_flyout {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+#input_add_popup::-ms-clear:hover:active, #input_add_popup::-ms-reveal:hover:active {
+    background-color: #ffffcd;
+    color: #e6e6a9;
+}

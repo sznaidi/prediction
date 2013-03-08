@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="CaptainDash.CAPTAINDASH" Version="12.1.0.1" Publisher="CN=DCE5B354-8D50-416F-A826-1E848D67C3C4" />
+  <Properties>
+    <DisplayName>CAPTAIN DASH</DisplayName>
+    <PublisherDisplayName>Captain Dash</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Captain Dash" Logo="images\cdLogo.png" SmallLogo="images\cdSmallLogo.png" Description="Captain Dash" ForegroundText="light" BackgroundColor="#ef8368" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" WideLogo="images\cdWideLogo.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#EC715A" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

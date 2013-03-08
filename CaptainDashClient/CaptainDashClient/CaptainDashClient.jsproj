@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>dbeb5785-1891-4440-88cc-06ec000b84f2</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>CaptainDashClient_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>04FEC21C8ED3F770BDAB29DDBB27DB28FEA4666A</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="audios\intro.mp3" />
+    <None Include="CaptainDashClient_StoreKey.pfx" />
+    <Content Include="css\default.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\jquery.svg.css" />
+    <Content Include="fonts\AbrilFatface-Regular.ttf" />
+    <Content Include="images\bottomAppBar\add.png" />
+    <Content Include="images\bottomAppBar\changePeroid.png" />
+    <Content Include="images\bottomAppBar\delete.png" />
+    <Content Include="images\bottomAppBar\hightlight.png" />
+    <Content Include="images\bottomAppBar\listenAgain.png" />
+    <Content Include="images\bottomAppBar\modify.png" />
+    <Content Include="images\bottomAppBar\newExploration.png" />
+    <Content Include="images\bottomAppBar\pinToCockpit.png" />
+    <Content Include="images\bottomAppBar\rate.png" />
+    <Content Include="images\bottomAppBar\skip.png" />
+    <Content Include="images\cdLogo.png" />
+    <Content Include="images\cdSmallLogo.png" />
+    <Content Include="images\cdWideLogo.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\rightMenu\deleteFilter.png" />
+    <Content Include="images\rightMenu\horizontalSeparator.png" />
+    <Content Include="images\rightMenu\minusButton.png" />
+    <Content Include="images\rightMenu\plusButton.png" />
+    <Content Include="images\rightMenu\rightMenuBackBtn.png" />
+    <Content Include="images\rightMenu\rightMenuBackBtnActive.png" />
+    <Content Include="images\rightMenu\rightMenuBackBtnHover.png" />
+    <Content Include="images\rightMenu\separator.png" />
+    <Content Include="images\rightMenu\verticalSeparator.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\snapTopAppBar\cockpit.png" />
+    <Content Include="images\snapTopAppBar\cockpitHighlighted.png" />
+    <Content Include="images\snapTopAppBar\dataExplorer.png" />
+    <Content Include="images\snapTopAppBar\dataExplorerHighlighted.png" />
+    <Content Include="images\snapTopAppBar\dataSource.png" />
+    <Content Include="images\snapTopAppBar\dataSourceHighlighted.png" />
+    <Content Include="images\snapTopAppBar\favorites.png" />
+    <Content Include="images\snapTopAppBar\favoritesHighlighted.png" />
+    <Content Include="images\snapTopAppBar\help.png" />
+    <Content Include="images\snapTopAppBar\helpHighlighted.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="images\topAppBar\cockpit.png" />
+    <Content Include="images\topAppBar\cockpitHighlighted.png" />
+    <Content Include="images\topAppBar\dataExplorer.png" />
+    <Content Include="images\topAppBar\dataExplorerHighlighted.png" />
+    <Content Include="images\topAppBar\dataSource.png" />
+    <Content Include="images\topAppBar\dataSourceHighlighted.png" />
+    <Content Include="images\topAppBar\help.png" />
+    <Content Include="images\topAppBar\helpHighlighted.png" />
+    <Content Include="js\bugsnagTemplate.js" />
+    <Content Include="js\cdHelper.js" />
+    <Content Include="js\cdServicesAccess.js" />
+    <Content Include="js\cdServicesHelper.js" />
+    <Content Include="js\charmeMenu.js" />
+    <Content Include="js\connectionHelper.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\dynamicTile.js" />
+    <Content Include="js\errorManager.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.svg.js" />
+    <Content Include="js\MarkedUp.js" />
+    <Content Include="js\messages\EN-US\messagesHelper.js" />
+    <Content Include="js\messages\FR-FR\messagesHelper.js" />
+    <Content Include="js\messages\messages.css" />
+    <Content Include="js\messages\messages.html" />
+    <Content Include="js\messages\messages.js" />
+    <Content Include="js\navigator.js" />
+    <Content Include="default.html" />
+    <Content Include="js\notifications\notifications.js" />
+    <Content Include="js\pages.js" />
+    <Content Include="js\popup\popup.css" />
+    <Content Include="js\popup\popup.html" />
+    <Content Include="js\popup\popup.js" />
+    <Content Include="js\rightMenu\rightMenu.css" />
+    <Content Include="js\rightMenu\rightMenu.js" />
+    <None Include="Package.StoreAssociation.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="pages\cockpits\cockpitHelper.js" />
+    <Content Include="pages\cockpits\cockpits.css" />
+    <Content Include="pages\cockpits\cockpits.html" />
+    <Content Include="pages\cockpits\cockpits.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\addKpiHelper.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\advancedStep\advancedStep.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\advancedStep\advancedStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\advancedStep\advancedStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\connectorsStep\connectorsStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\connectorsStep\connectorsStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\metricsStep\metricsStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\metricsStep\metricsStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\resumeStep\resumeStep.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\resumeStep\resumeStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\addKpiMenu\resumeStep\resumeStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\formatTileStep\formatTileStep.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\formatTileStep\formatTileStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\formatTileStep\formatTileStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyExplorationMenu\modifyExplorationHelper.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyExplorationMenu\modifyExplorationMenu.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyExplorationMenu\modifyExplorationMenu.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyExplorationMenu\modifyExplorationMenu.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\advancedStep\advancedStep.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\advancedStep\advancedStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\advancedStep\advancedStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\modifyKpiHelper.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\resumeStep\resumeStep.css" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\resumeStep\resumeStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\modifyKpiMenu\resumeStep\resumeStep.js" />
+    <Content Include="pages\cockpits\cockpitsMenus\typeTileStep\typeTileStep.html" />
+    <Content Include="pages\cockpits\cockpitsMenus\typeTileStep\typeTileStep.js" />
+    <Content Include="pages\cockpits\cockpitsServices\cockpitsService.js" />
+    <Content Include="pages\cockpits\images\addModifyTile\btn+widgetMenu.png" />
+    <Content Include="pages\cockpits\images\addModifyTile\btn-widgetMenu.png" />
+    <Content Include="pages\cockpits\images\addModifyTile\itemSeparator.png" />
+    <Content Include="pages\cockpits\images\addModifyTile\itemSeparatorVertical.png" />
+    <Content Include="pages\cockpits\images\flyout_arrow.png" />
+    <Content Include="pages\cockpits\images\numberIcon.png" />
+    <Content Include="pages\cockpits\images\imageTransparente.png" />
+    <Content Include="pages\cockpits\images\kpiAt.png" />
+    <Content Include="pages\cockpits\images\kpiAtH.png" />
+    <Content Include="pages\cockpits\images\kpiCsv.png" />
+    <Content Include="pages\cockpits\images\kpiCsvH.png" />
+    <Content Include="pages\cockpits\images\kpiFb.png" />
+    <Content Include="pages\cockpits\images\kpiFbH.png" />
+    <Content Include="pages\cockpits\images\kpiFs.png" />
+    <Content Include="pages\cockpits\images\kpiFsH.png" />
+    <Content Include="pages\cockpits\images\kpiGa.png" />
+    <Content Include="pages\cockpits\images\kpiGaH.png" />
+    <Content Include="pages\cockpits\images\kpiTw.png" />
+    <Content Include="pages\cockpits\images\kpiTwH.png" />
+    <Content Include="pages\dashboards\dashboardMenus\dashboardMenu.css" />
+    <Content Include="pages\dashboards\dashboardMenus\addDashboardMenu\addDashboardMenu.js" />
+    <Content Include="pages\dashboards\dashboardMenus\dashboardMenu.html" />
+    <Content Include="pages\dashboards\dashboardMenus\modifyDashboardMenu\modifyDashboardMenu.js" />
+    <Content Include="pages\dashboards\dashboards.js" />
+    <Content Include="pages\dashboards\dashboardsHelper.js" />
+    <Content Include="pages\dashboards\dashboardsServices\dashboardsServices.js" />
+    <Content Include="pages\dataExplorer\d3jsAccess\cdd3\cdd3.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\graphTypeStep\graphType.css" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\graphTypeStep\graphType.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\graphTypeStep\graphType.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\resumeStep\resume.css" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\resumeStep\resume.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\modifySerie\resumeStep\resume.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\pinToCockpit\pinToCockpit.css" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\pinToCockpit\pinToCockpit.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\pinToCockpit\pinToCockpit.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\pinToCockpit\pinToCockpitHelper.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\timeRange\timeRange.css" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\timeRange\timeRange.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\timeRange\timeRange.js" />
+    <Content Include="pages\dataExplorer\dataExplorerServices\dataExplorerServices.js" />
+    <Content Include="pages\dataExplorer\chartHelper.js" />
+    <Content Include="pages\dataExplorer\d3jsAccess\cdd3\d3.css" />
+    <Content Include="pages\dataExplorer\dataExplorer.js" />
+    <Content Include="pages\dataExplorer\dataExplorer.css" />
+    <Content Include="pages\dataExplorer\dataExplorerController.js" />
+    <Content Include="pages\dataExplorer\dataExplorerHelper.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\addSerieHelper.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\connectorsStep\connectors.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\connectorsStep\connectors.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\connectorsTypeStep\connectorsType.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\connectorsTypeStep\connectorsType.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\metricsStep\metrics.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\metricsStep\metrics.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\resumeStep\resume.css" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\resumeStep\resume.html" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\addSerie\resumeStep\resume.js" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\images\bars.png" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\images\dots.png" />
+    <Content Include="pages\dataExplorer\dataExplorerMenus\images\lines.png" />
+    <Content Include="pages\dataExplorer\explorationTemplate\exploration.js" />
+    <Content Include="pages\dataExplorer\grid\grid.css" />
+    <Content Include="pages\dataExplorer\grid\grid.js" />
+    <Content Include="pages\dataExplorer\grid\gridHelper.js" />
+    <Content Include="pages\dataExplorer\images\backgroundSnapDefaultView.png" />
+    <Content Include="pages\dataExplorer\images\btnAdvencedFilter.png" />
+    <Content Include="pages\dataExplorer\images\btnDeleteModify.png" />
+    <Content Include="pages\dataExplorer\images\btnLegendAddSerie.png" />
+    <Content Include="pages\dataExplorer\images\flyoutBtn.png" />
+    <Content Include="pages\dataExplorer\images\separatorFlyout.png" />
+    <Content Include="pages\dataExplorer\legend\legendHelper.js" />
+    <Content Include="pages\dataExplorer\serieTemplate\serie.js" />
+    <Content Include="pages\dataExplorer\dataExplorer.css" />
+    <Content Include="pages\dataExplorer\images\backgroundDefaultView.png" />
+    <Content Include="pages\dataExplorer\images\stackedLogo.png" />
+    <Content Include="pages\dataExplorer\legend\legend.css" />
+    <Content Include="pages\dataExplorer\legend\legend.js" />
+    <Content Include="pages\dataExplorer\serieTemplate\serie.js" />
+    <Content Include="pages\dataExplorer\d3jsAccess\d3jsAccess.js" />
+    <Content Include="pages\dataExplorer\d3jsAccess\d3jsAccessHelper.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\addTwMenuHelper.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\connectorTypeStep\connectorsTypeStep.html" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\connectorTypeStep\connectorsTypeStep.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\searchResultStep\searchResultStep.css" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\searchResultStep\searchResultStep.html" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\searchResultStep\searchResultStep.js" />
+    <Content Include="pages\dataSources\connectorsMenus\defaultWidget\defaultWidget.css" />
+    <Content Include="pages\dataSources\connectorsMenus\defaultWidget\defaultWidget.js" />
+    <Content Include="pages\dataSources\connectorsMenus\sourceNameStep\sourceNameStep.css" />
+    <Content Include="pages\dataSources\connectorsMenus\sourceNameStep\sourceNameStep.html" />
+    <Content Include="pages\dataSources\connectorsMenus\sourceNameStep\sourceNameStep.js" />
+    <Content Include="pages\dataSources\connectorsMenus\sourceNameStep\sourceNameStepHelper.js" />
+    <Content Include="pages\dataSources\images\backgroundRadioColor.png" />
+    <Content Include="pages\help\help.css" />
+    <Content Include="pages\help\help.html" />
+    <Content Include="pages\dashboards\dashboards.css" />
+    <Content Include="pages\dashboards\dashboards.html" />
+    <Content Include="pages\dataExplorer\dataExplorer.html" />
+    <Content Include="pages\DataSources\connectorsApi\atlasApi.js" />
+    <Content Include="pages\DataSources\connectorsApi\connectorApi.js" />
+    <Content Include="pages\DataSources\connectorsApi\connectorsApiFactory.js" />
+    <Content Include="pages\DataSources\connectorsApi\facebookApi.js" />
+    <Content Include="pages\DataSources\connectorsApi\foursquareApi.js" />
+    <Content Include="pages\DataSources\connectorsApi\googleAnalyticsApi.js" />
+    <Content Include="pages\DataSources\connectorsApi\twitterApi.js" />
+    <Content Include="pages\dataSources\connectorsCredentials\credentialsServices.js" />
+    <Content Include="pages\dataSources\connectorsCredentials\credentialsTemplate.js" />
+    <Content Include="pages\dataSources\connectorsCredentials\credentials.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addAtMenu\addAtMenuHelper.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\addFbMenuHelper.js" />
+    <Content Include="pages\DataSources\connectorsCredentials\credentialsTemplate.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\connectorsTypeStep\connectorsTypeStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\connectorsTypeStep\connectorsTypeStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\connectorsTypeStep\connectorsTypeStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchResultStep\searchResultStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchResultStep\searchResultStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchResultStep\searchResultStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchStep\searchStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchStep\searchStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\searchStep\searchStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\sourceNameStep\sourceNameStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\sourceNameStep\sourceNameStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFbMenu\sourceNameStep\sourceNameStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\addFsMenuHelper.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchResultStep\searchResultStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchResultStep\searchResultStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchResultStep\searchResultStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchStep\searchStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchStep\searchStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\searchStep\searchStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\sourceNameStep\sourceNameStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\sourceNameStep\sourceNameStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\sourceNameStep\sourceNameStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\venueTypeStep\venueTypeStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\venueTypeStep\venueTypeStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addFsMenu\venueTypeStep\venueTypeStep.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addGaMenu\addGaMenuHelper.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\accountStep\accountStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\accountStep\accountStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\accountStep\accountStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.js" />
+    <Content Include="pages\DataSources\connectorsMenus\credentialsMenu\credentialsMenu.css" />
+    <Content Include="pages\DataSources\connectorsMenus\credentialsMenu\credentialsMenu.html" />
+    <Content Include="pages\DataSources\connectorsMenus\credentialsMenu\credentialsMenu.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addAtMenu\atAccountPage\atAccountPage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atAccountPage\atAccountPage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atAccountPage\atAccountPage.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addAtMenu\atAgencyPage\atAgencyPage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atAgencyPage\atAgencyPage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atAgencyPage\atAgencyPage.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addAtMenu\atClientPage\atClientPage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atClientPage\atClientPage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atClientPage\atClientPage.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addAtMenu\atSourceNamePage\atSourceNamePage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atSourceNamePage\atSourceNamePage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addAtMenu\atSourceNamePage\atSourceNamePage.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addGaMenu\gaAccountPage\gaAccountPage.css" />
+    <Content Include="pages\dataSources\connectorsMenus\addGaMenu\gaAccountPage\gaAccountPage.html" />
+    <Content Include="pages\dataSources\connectorsMenus\addGaMenu\gaAccountPage\gaAccountPage.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaProfilePage\gaProfilePage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaProfilePage\gaProfilePage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaProfilePage\gaProfilePage.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaSourceNamePage\gaSourceNamePage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaSourceNamePage\gaSourceNamePage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaSourceNamePage\gaSourceNamePage.js" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaWebPropertiesPage\gaWebPropertiesPage.css" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaWebPropertiesPage\gaWebPropertiesPage.html" />
+    <Content Include="pages\DataSources\connectorsMenus\addGaMenu\gaWebPropertiesPage\gaWebPropertiesPage.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\accountStep\accountStep.css" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\accountStep\accountStep.html" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\accountStep\accountStep.js" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.css" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.html" />
+    <Content Include="pages\dataSources\connectorsMenus\addTwMenu\sourceNameStep\sourceNameStep.js" />
+    <Content Include="pages\DataSources\connectorsServices\connectorsServices.js" />
+    <Content Include="pages\DataSources\connectorsTemplate\connectorsTemplate.js" />
+    <Content Include="pages\dataSources\connectorsMenus\connectorsTypeMenu.html" />
+    <Content Include="pages\dataSources\connectorsMenus\connectorsTypeMenu.js" />
+    <Content Include="pages\dataSources\connectorsMenus\connectorsMenuFactory.js" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\atToultip.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\atlasdefaultStatus.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\atlasdefaultStatusActive.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\atlasdefaultStatusHover.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\facebookDefaultStatus.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\facebookDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\facebookDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\foursquareDefaultStatus.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\foursquareDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\foursquareDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\googleDefaultStatus.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\googleDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\googleDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\twitterDefaultStatus.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\twitterDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\defaultTiles\twitterDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\fbToultip.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\fsToultip.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\gaToultip.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\newSource.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\twToultip.png" />
+    <Content Include="pages\dataSources\connectorsTemplate\images\ytToultip.png" />
+    <Content Include="pages\dataSources\dataSources.css" />
+    <Content Include="pages\dataSources\dataSources.html" />
+    <Content Include="pages\dataSources\dataSources.js" />
+    <Content Include="pages\DataSources\dataSourcesHelper.js" />
+    <Content Include="pages\dataSources\images\dataSources.png" />
+    <Content Include="pages\dataSources\images\defaultItems\atlasdefaultStatus.png" />
+    <Content Include="pages\dataSources\images\defaultItems\atlasdefaultStatusActive.png" />
+    <Content Include="pages\dataSources\images\defaultItems\atlasdefaultStatusHover.png" />
+    <Content Include="pages\dataSources\images\defaultItems\facebookDefaultStatus.png" />
+    <Content Include="pages\dataSources\images\defaultItems\facebookDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\images\defaultItems\facebookDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\images\defaultItems\foursquareDefaultStatus.png" />
+    <Content Include="pages\dataSources\images\defaultItems\foursquareDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\images\defaultItems\foursquareDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\images\defaultItems\googleDefaultStatus.png" />
+    <Content Include="pages\dataSources\images\defaultItems\googleDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\images\defaultItems\googleDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\images\defaultItems\twitterDefaultStatus.png" />
+    <Content Include="pages\dataSources\images\defaultItems\twitterDefaultStatusActive.png" />
+    <Content Include="pages\dataSources\images\defaultItems\twitterDefaultStatusHover.png" />
+    <Content Include="pages\dataSources\images\flyoutBtnDark.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\ATLAS.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\facebook.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\fs.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\ga.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\newSourceButton.png" />
+    <Content Include="pages\dataSources\images\tooltipConnector\twitter.png" />
+    <Content Include="pages\dataSources\unitTests\unitTests.js" />
+    <Content Include="pages\help\help.js" />
+    <Content Include="pages\help\helpUtil.js" />
+    <Content Include="pages\help\images\aboutHelp.png" />
+    <Content Include="pages\help\images\aboutHelpSnap.png" />
+    <Content Include="pages\help\images\cockpit.png" />
+    <Content Include="pages\help\images\cockpitHelp.png" />
+    <Content Include="pages\help\images\cockpitHelpSnap.png" />
+    <Content Include="pages\help\images\cockpitsnap.png" />
+    <Content Include="pages\help\images\dataExplorerHelp.png" />
+    <Content Include="pages\help\images\dataExplorerHelpSnap.png" />
+    <Content Include="pages\help\images\dataSourceHelp.png" />
+    <Content Include="pages\help\images\dataSourceHelpSnap.png" />
+    <Content Include="pages\help\images\explorer.png" />
+    <Content Include="pages\help\images\explorerSnap.png" />
+    <Content Include="pages\help\images\favorites.png" />
+    <Content Include="pages\help\images\favoritesSnap.png" />
+    <Content Include="pages\help\images\myFavoriteHelp.png" />
+    <Content Include="pages\help\images\myFavoriteHelpSnap.png" />
+    <Content Include="pages\help\images\sources.png" />
+    <Content Include="pages\help\images\sourcesSnap.png" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\login\forgetPasswordPage\forgetPasswordPage.css" />
+    <Content Include="pages\login\forgetPasswordPage\forgetPasswordPage.html" />
+    <Content Include="pages\login\forgetPasswordPage\forgetPasswordPage.js" />
+    <Content Include="pages\login\images\backButton.png" />
+    <Content Include="pages\login\images\img_login_background_full.png" />
+    <Content Include="pages\login\images\introFilled.png" />
+    <Content Include="pages\login\images\introImageSnap.png" />
+    <Content Include="pages\login\images\introImg.png" />
+    <Content Include="pages\login\images\introImgSnap.png" />
+    <Content Include="pages\login\images\worldIntroImg.png" />
+    <Content Include="pages\login\images\worldIntroImgSnap.png" />
+    <Content Include="pages\login\introPage\introPage.css" />
+    <Content Include="pages\login\introPage\introPage.html" />
+    <Content Include="pages\login\introPage\introPage.js" />
+    <Content Include="pages\login\login.css" />
+    <Content Include="pages\login\login.html" />
+    <Content Include="pages\login\login.js" />
+    <Content Include="pages\login\loginHelper.js" />
+    <Content Include="pages\login\loginServices.js" />
+    <Content Include="pages\login\registerPage\registerPage.css" />
+    <Content Include="pages\login\registerPage\registerPage.html" />
+    <Content Include="pages\login\registerPage\registerPage.js" />
+    <Content Include="pages\login\signIn\signIn.css" />
+    <Content Include="pages\login\signIn\signIn.html" />
+    <Content Include="pages\login\signIn\signIn.js" />
+    <Content Include="pages\search\search.css" />
+    <Content Include="pages\search\search.html" />
+    <Content Include="pages\search\search.js" />
+    <Content Include="pages\search\searchController.js" />
+    <Content Include="pages\search\searchHelper.js" />
+    <None Include="CaptainDashClient_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pages\dataSources\connectorsMenus\addGaMenu\gaProfilePage\" />
+    <Folder Include="pages\dataSources\connectorsMenus\addGaMenu\gaSourceNamePage\" />
+    <Folder Include="pages\dataSources\connectorsMenus\addGaMenu\gaWebPropertiesPage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MarkedUp">
+      <HintPath>..\packages\MarkedUp.0.6.7\lib\winrt45\MarkedUp.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="strings\en-US\resources.resjson" />
+    <PRIResource Include="strings\fr-FR\resources.resjson" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

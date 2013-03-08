@@ -1,0 +1,110 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 17/01/2013
+------------------------------*/
+
+/*---------------------------Full view----------------------*/
+#div_intro_content {
+    -ms-grid-column:3; 
+    -ms-grid-row:2;
+    -ms-grid-rows:10.1% 67px 1fr; 
+    display: -ms-grid;
+    width:100%;
+}
+
+#img_intro_worldIntro {
+    display: -ms-grid;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    width: 95px;
+    height: 155px;
+    background-image: url('/pages/login/images/worldIntroImg.png');
+    background-size: 92.1% 88.4%;
+    margin-top: -38%;
+    background-repeat: no-repeat;
+}
+.welcomeText {
+    color: #EC715A;
+    font-family: Segoe UI;
+    font-style: italic;
+    font-size: 20pt;
+    width: 480px;
+}
+
+#div_intro_welcomeText {
+     -ms-grid-row:1;
+}
+
+
+#txt_intro_txtChecbox {
+    -ms-grid-column:2;
+    -ms-grid-row-align: start;
+    letter-spacing: 0.04em; 
+    margin: 1px 0 0 19px; 
+    color: #faf8ea; 
+    font-family: Segoe UI; 
+    font-size: 11pt;
+    width:300px;
+}
+
+#btn_intro_launchButton {
+    -ms-grid-row:2;
+    -ms-grid-row-align: end;
+     display:-ms-grid;
+}
+
+#div_intro_bottomAppBar {
+ background-color: #EC715A; 
+ -ms-user-select: none; 
+ visibility: hidden; 
+ -ms-grid-rows: 1fr 80px 80px; 
+ -ms-grid-columns: 1fr;
+}
+
+
+ /*-------------------------Snap view ----------------------------*/
+@media screen and (-ms-view-state: snapped)
+{
+   
+   #img_intro_worldIntro {
+     background-image: url('/pages/login/images/worldIntroImgSnap.png');
+     background-size: 62% 90%;
+     -ms-grid-row: 1;
+     -ms-grid-column: 2;
+     -ms-grid-column-align: start;
+     -ms-grid-row-align: start;
+     margin-top: 3.6%;
+     margin-left: -2px;
+     width: 150px;
+     height: 102px;      
+   }
+
+  .welcomeText {
+     font-size: 15pt;
+     width: 300px;
+  }
+  .contentBackBtn {
+   -ms-grid-row:1; 
+  }
+}
+
+/*------------------------Filled view (Mode 2/3) ------------------------*/
+
+@media screen and (-ms-view-state: filled) {
+    #img_intro_worldIntro {
+        margin-right: -6.3%;  
+        margin-left: 60px;      
+    }
+
+    #btn_intro_launchButton {
+    margin-left: 115%;
+   }
+     #div_intro_welcomeText {
+     -ms-grid-column:2;
+     margin-left: 3%;
+}
+}
+
+
+
+

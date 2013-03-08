@@ -1,0 +1,46 @@
+﻿/* -------------------------------
+-- Author : [M.C]
+-- Creation date : 30/01/2013
+-------------------------------*/
+
+#div_cockpit_FormatTile .rightMenuLv #div_FormatTile_cockpits {
+    width: 95%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #FAF8EA;
+    font-size: 10.5pt;
+    font-family: Segoe UI;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
+    display: -ms-grid;
+    -ms-grid-columns:14% 28% 1fr
+}
+
+#div_cockpit_FormatTile .rightMenuLv .imageFormatTile {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: auto;
+    background-color: transparent;
+}
+
+#div_cockpit_FormatTile .rightMenuLv .labelFormatTile {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
+    margin-left: 7px;
+}
+
+#div_cockpit_FormatTile .rightMenuLv .win-vertical .win-item {  
+    height: 110px;
+}

@@ -1,0 +1,346 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 05/02/2013
+------------------------------*/
+
+#div_explorer_topPage_label{
+    display:-ms-grid;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+#div_explorer_topPage_labelExploration{
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    font-size: 27px;
+    color : rgb(109, 107, 98);
+    margin-top:29px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: normal;
+    display: block;
+}
+/********************************** Explorer default view *****************************/
+#div_explorer_DefaultPage {
+    background-image: url('/pages/dataExplorer/images/backgroundDefaultView.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#div_dataExplorer_headerDefaultPage {
+    color: #636159;
+    font-family: 'Segoe UI Light';
+    font-size: 20pt;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    letter-spacing: -0.01em;
+    font-weight: 200;
+    margin-top: -2%;
+    display:block;
+}
+
+
+
+/********************************** Explorer full view *********************************/
+
+#div_explorer_topPage_labelContainer {
+    display:-ms-grid; 
+    -ms-grid-columns:200px 30px 1fr;
+}
+
+ #div_dataExplorerSmall_legendTitle {
+            display:none;
+    }
+#div_dataExplorer_headerPage {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-columns: 63.1% 137.5px 300px 120px 20%;
+    display: -ms-grid;
+}
+
+.headerStyle {
+    color: #ec715a;
+    font-family: 'Segoe UI Light';
+    font-size: 20pt;
+}
+
+#div_dataExplorer_explorationsHeader {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-columns: 1fr calc(100% - 600px) auto;
+    display: -ms-grid;
+    width: 95%;
+}
+
+#div_dataExplorer_periods {
+    display: -ms-grid;
+    -ms-grid-column: 1;
+    -ms-grid-columns: auto auto auto;
+    -ms-grid-row: 1;
+}
+
+#div_dataExplorer_selectedPeriod {
+    color: #ec715a;
+    font-size: 27px;
+    -ms-grid-column: 1;
+    font-family: Segoe UI;
+}
+
+#div_dataExplorer_periodeToCompare {
+    color: rgb(236, 113, 90);
+    padding-left: 5px;
+    font-family: Segoe UI;
+    font-size: 27px;
+    -ms-grid-column: 2;
+}
+
+#div_dataExplorer_flyoutAgregation {
+    -ms-grid-column: 3;
+    display:-ms-grid;
+    -ms-grid-columns: auto 20px;
+    -ms-grid-rows:1fr;
+    -ms-grid-row-align:center;
+    /*margin-left:100px;*/
+}
+
+#div_dataExplorer_stackedLogo {
+    display: none;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: 0px;
+    margin-right: -2px;
+    width: 40px;
+    height: 40px;
+    -ms-grid-column-align: end;
+    background-image: url(/pages/dataExplorer/images/stackedLogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#div_dataExplorer_tooltipsContainer {
+    display: -ms-grid;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    width: auto;
+    margin-top: 10px;
+    -ms-grid-column-align: end;
+    height: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.div_dataExplorer_containerAdvencedTooltip {
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #000;
+    z-index: 999;
+}
+
+.lbl_dataExplorer_advencedTooltip {
+    margin-top: -5px;
+    margin-left: 5px;
+    height: 35px;
+    font-size:21.33px
+}
+
+.div_dataExplorer_subContainerAdvencedTooltip {
+    float: right;
+    width: auto;
+    height: auto;
+}
+
+#div_dataExplorer_legendTitle {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    display: -ms-grid;
+}
+
+#div_dataExplorer_gridTitle {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+    display: -ms-grid;
+}
+
+#div_dataExplorer_contentPage {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    -ms-grid-columns: 63.1% calc(137.5px + 3.25%) 300px 120px 35%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#div_dataExplorerSnap_chartContent {
+    display: none;
+}
+
+#div_dataExplorer_chartContent {
+    -ms-grid-column: 1;
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+    display: block;
+}
+
+#div_dataExplorer_legend {
+    -ms-grid-column: 3;
+    height: 100%;
+    position: relative;
+}
+
+#div_dataExplorer_grid {
+    padding-right: 10px;
+    background-color: #faf8ea;
+    -ms-grid-column: 5;
+    display: -ms-grid;
+    -ms-grid-rows: 49px 1fr;
+    -ms-grid-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#div_dataExplorer_gridHeader {
+    -ms-grid-column: 1;
+}
+
+#div_dataExplorer_gridContent {
+    -ms-grid-column: 2;
+}
+
+#div_dataExplorer_Container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+
+#div_dataExplorer_legendContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#lbl_dataExplorerPage_currentFrequency {
+    color: #C7C2B0;
+    font-family: Segoe UI Light;
+    font-size: 26.66px;
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    margin-left: 5px;
+}
+
+#btn_dataExplorerPage_frequency {
+    background-image: url('/pages/dataExplorer/images/flyoutBtn.png');
+    background-size: cover;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    margin-top: 10px;
+    margin-left:4px;
+}
+
+/********************************** Explorer 2/3 view **********************************/
+
+@media screen and (-ms-view-state: filled) {
+}
+
+/********************************** Explorer snap view *********************************/
+
+@media screen and (-ms-view-state: snapped) {
+    #div_explorer_topPage_labelExploration {
+        display: none;
+    }
+      #div_dataExplorer_headerDefaultPage {
+    display:none;
+    }
+
+    #div_explorer_DefaultPage {
+    background-image: url('/pages/dataExplorer/images/backgroundSnapDefaultView.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+     .bodyPage {
+        -ms-grid-columns: 20px 1fr ;
+       
+    }
+    #div_dataExplorerSnap_chartContent {
+        display: block;
+        -ms-grid-column: 3;
+            -ms-grid-row: 1;
+        width: 280px;
+        height: 110px;
+    }
+
+    #div_dataExplorer_chartContent {
+        display: none;
+    }
+
+    #div_dataExplorer_grid {
+        display: none;
+    }
+
+    #div_dataExplorerSmall_legendTitle {
+            font-size: 14.66px;
+            display:-ms-grid;
+              -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    #div_dataExplorer_legendTitle {
+       display:none;
+    }
+
+    #div_dataExplorer_gridTitle {
+        display: none;
+    }
+
+    #div_dataExplorer_contentPage {
+        -ms-grid-rows: 110px 30px 25px auto;
+        -ms-grid-columns: 0% 0% 100% 0% 0% 0%;
+        margin-left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -ms-grid-column: 2;
+    }
+
+    #div_dataExplorer_legend {
+        -ms-grid-row: 4;
+        -ms-grid-column: 3;
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    #div_dataExplorer_flyoutAgregation {
+    display:none;
+    }
+
+    #div_dataExplorer_selectedPeriod {
+    font-size: 14.66px;
+}
+
+    #div_dataExplorer_headerPage {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-columns: 100% 0 0 0 0;
+    display: -ms-grid;
+    margin-left:-28px;
+}
+
+
+
+}

@@ -1,0 +1,24 @@
+﻿<!---------------------------------
+-- Author : [A.A]
+-- Creation date : 05/02/2013
+--------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add serie menu : metrics step</title>
+    <script src="/pages/dataExplorer/dataExplorerMenus/addSerie/metricsStep/metrics.js"></script>
+</head>
+<body>
+
+    <!-- Metrics step -->
+    <div id="lvMetricsTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItems" data-win-bind="innerText: name;"></div>
+        </div>
+    </div>
+    <div id="lvMetrics" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvMetricsTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+    </div>
+
+</body>
+</html>

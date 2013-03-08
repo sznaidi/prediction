@@ -1,0 +1,23 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------*/
+
+#fsVenueType {
+    -ms-grid-rows:160px 60px;
+    -ms-grid-columns:11.9% 1fr;
+    display:-ms-grid;
+}
+
+#lv_venueType {
+    height:140px;
+    -ms-grid-row:1;
+    -ms-grid-column:1;
+    -ms-grid-column-span:2;
+}
+
+#fsVenueTypeError {
+    -ms-grid-row:2;
+    -ms-grid-column:2;
+}
+

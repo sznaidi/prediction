@@ -1,0 +1,38 @@
+﻿<!--[MC] Creation date : 21/12/2012-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add Google Analytic connector menu</title>
+    <link href="/pages/DataSources/connectorsMenus/addGaMenu/gaProfilePage/gaProfilePage.css" rel="stylesheet" />
+    <script src="/pages/DataSources/connectorsMenus/addGaMenu/gaProfilePage/gaProfilePage.js"></script>
+</head>
+<body>
+
+    <div id="template_lvGoogleProfiles" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItemsProfile" style="">
+                <div class="radioItemContainer" style="">
+                    <div  class="radioItem" style="" data-win-bind=" id: radioId; style.backgroundImage: radioBackgroundImg;">
+                    </div>
+                </div>
+                <div class="textItem" style="" data-win-bind="innerText: name;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gaProfilePage" class="rightMenuContentDiv gaProfilePage">
+        <div id="lv_googleProfiles" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvGoogleProfiles, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+          <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuCenteredDiv">
+                    <div class="rightMenuErrorText" id="lbl_addGaProfile_errorUsedProfile"></div>
+                    <button id="btn_gaProfiles_Next" class="rightMenuBtn" data-win-res="{textContent: 'btn_gaProfiles_Next'}">
+                       
+                    </button>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>

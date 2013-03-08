@@ -1,0 +1,54 @@
+﻿.rightMenuCenteredDiv .defaultWidget {
+    -ms-grid-row: 5;
+    display: none;
+    -ms-grid-rows: 20px 50px 20px 20px 50px 20px;
+    -ms-grid-columns: 1fr;
+}
+.rightMenuCenteredDiv .dashboardLabel {
+    -ms-grid-row: 1;
+    font-size:10.5pt;
+}
+
+.rightMenuCenteredDiv .slctDashboard {
+    -ms-grid-row: 2;
+    -ms-grid-columns: 1fr;
+}
+.rightMenuCenteredDiv .groupLabel {
+    -ms-grid-row: 4;
+    font-size:10.5pt;
+}
+
+.rightMenuCenteredDiv .slctGroup {
+    -ms-grid-columns: 1fr;
+    -ms-grid-row: 5;
+}
+.rightMenuCenteredDiv .addDashboardDiv {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 10px 32px;
+}
+.rightMenu input[type=text] .inputAddDashboard {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+.rightMenuCenteredDiv .addGroupDiv {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 8px 32px;
+}
+.rightMenuCenteredDiv .inputAddGroup {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+.rightMenuCenteredDiv .errorDashboardDiv {
+    -ms-grid-row: 3;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#EC715A;
+}
+
+.rightMenuCenteredDiv .errorGroupDiv {
+    -ms-grid-row: 6;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#EC715A;
+}

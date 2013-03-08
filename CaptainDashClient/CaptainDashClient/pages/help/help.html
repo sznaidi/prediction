@@ -1,0 +1,213 @@
+﻿<!-------------------------------
+-- Author : [S.H]
+-- Creation date : 08/01/2013
+------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/pages/help/help.css" rel="stylesheet" type="text/css" />
+    <script src="/pages/help/help.js"></script>
+</head>
+<body>
+
+    <!--Template help page in normal view-->
+    <div id="template_helpItem" data-win-control="WinJS.Binding.Template">
+        <div class="helpItem" data-win-bind="style.backgroundColor:background">
+            <div class="infoHelpWrapper">
+                <div class="helpTitle" data-win-bind="innerText: title">
+                </div>
+                <div class="helpDescTitle" data-win-bind="innerText: descTitle">
+                </div>
+                <div class="helpDesc" data-win-bind="innerText: desc">
+                </div>
+            </div>
+            <div class="helpImg" data-win-bind="style.backgroundImage:tooltip">
+            </div>
+        </div>
+    </div>
+    <!--Template help page in snap view-->
+    <div id="template_helpItem_SV" data-win-control="WinJS.Binding.Template">
+        <div class="helpSnapItem" data-win-bind="style.backgroundColor:background">
+            <div class="infoHelpSnapWrapper">
+                <div class="helpSnapTitle" data-win-bind="innerText: title">
+                </div>
+                <div class="helpDescSnapTitle" data-win-bind="innerText: descTitle">
+                </div>
+            </div>
+            <div class="helpSnapImg" data-win-bind="style.backgroundImage:tooltipSnap">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="helpPage">
+        <!-- list of items-->
+        <div class="containerItemsHelp" id="containerItemsHelp">
+            <div class="topContainerItemsHelp" id="div_help_topContainerItems">
+                <button class="win-backbutton" aria-label="Back"></button>
+                <div id="lbl_help_title" class="helpLabel" data-win-res="{textContent: 'lbl_help_title'}"></div>
+            </div>
+            <div class="contentContainerItems" id="contentContainerItems">
+                <div id="lv_help" data-win-control="WinJS.UI.ListView">
+                </div>
+            </div>
+        </div>
+        <!-- descriptions part-->
+        <div class="containerDescriptionsHelp" id="containerDescriptionsHelp">
+           <div class="topDescriptionHelp">
+                <div id="titleDescription"></div>
+                <div id="subTitleDescription"></div>
+           </div>
+          
+          <!-- ---------------------------------------------------------------------- About description   ------------------------------------------------------------------------>
+          <div id="div_help_about" style="display: none">  
+                <div class="topDescriptionSnapHelp">
+                        <div id="div_help_about_titleDescriptionSnap" class="titleDescriptionSnap" data-win-res="{textContent: 'div_help_about_titleDescriptionSnap'}"></div>
+                        <div id="div_help_about_subTitleDescriptionSnap" class="subTitleDescriptionSnap" data-win-res="{textContent: 'div_help_about_subTitleDescriptionSnap'}"></div>
+                    </div>       
+                 <div id="lbl_help_about_text1" data-win-res="{textContent: 'lbl_help_about_text1'}" class="subTitle"></div>
+              <div id="lbl_help_about_text2" data-win-res="{textContent: 'lbl_help_about_text2'}"></div>
+               <div id="lbl_help_about_text3" data-win-res="{textContent: 'lbl_help_about_text3'}"></div>
+               <div id="lbl_help_about_text4" data-win-res="{textContent: 'lbl_help_about_text4'}"></div>
+              <div id="lbl_help_about_text5" data-win-res="{textContent: 'lbl_help_about_text5'}"></div>
+              <div id="lbl_help_about_text6" data-win-res="{textContent: 'lbl_help_about_text6'}"></div>
+                <br />
+                <div id="lbl_help_about_text7" data-win-res="{textContent: 'lbl_help_about_text7'}"></div>
+                    <br />
+              <div id="lbl_help_about_text9Container" >
+                   <div id="lbl_help_about_text9" data-win-res="{textContent: 'lbl_help_about_text9'}"> </div>
+                     <a  href="http://captaindash.com/" style="color: #4c4a43; text-decoration: underline;display:-ms-grid;-ms-grid-column:3;-ms-grid-row:1;">www.captaindash.com</a>
+              </div>
+               <div id="lbl_help_about_text10Container">
+                <div id="lbl_help_about_text10" data-win-res="{textContent: 'lbl_help_about_text10'}" > </div>
+                      <a href="mailto:support@captaindash.com" style="color: #4c4a43; text-decoration: underline;display:-ms-grid;-ms-grid-column:3;-ms-grid-row:1;">support@captaindash.com</a>
+                   </div>
+                <br />
+
+               <div id="lbl_help_about_text11" data-win-res="{textContent: 'lbl_help_about_text11'}" class="subTitle"></div>
+                <div id="lbl_help_about_text12" data-win-res="{textContent: 'lbl_help_about_text12'}"></div>
+              <div id="lbl_help_about_text13" data-win-res="{textContent: 'lbl_help_about_text13'}">  </div>
+               <div id="lbl_help_about_text14" data-win-res="{textContent: 'lbl_help_about_text14'}"> </div>
+
+               <div id="lbl_help_about_text15" data-win-res="{textContent: 'lbl_help_about_text15'}" class="subTitle"></div>
+               <div id="lbl_help_about_text16" data-win-res="{textContent: 'lbl_help_about_text16'}">  </div>
+               <div id="lbl_help_about_text17" data-win-res="{textContent: 'lbl_help_about_text17'}">  	</div>
+               <div id="lbl_help_about_text18" data-win-res="{textContent: 'lbl_help_about_text18'}">  
+                     </div>
+               <div id="lbl_help_about_text19" data-win-res="{textContent: 'lbl_help_about_text19'}"> 
+                     </div>
+               <div id="lbl_help_about_text20" data-win-res="{textContent: 'lbl_help_about_text20'}">
+                     </div>
+                <br />
+            </div>
+
+                <!-- ------------------------------------------------------------Cockpit description   ------------------------------------------------------------------------->
+            <div id="div_help_cockpit" style="display: none">              
+                 <div class="topDescriptionSnapHelp">
+                        <div id="div_help_cockpit_titleDescriptionSnap" class="titleDescriptionSnap" data-win-res="{textContent: 'div_help_cockpit_titleDescriptionSnap'}"></div>
+                        <div id="div_help_cockpit_subTitleDescriptionSnap" class="subTitleDescriptionSnap" data-win-res="{textContent: 'div_help_cockpit_subTitleDescriptionSnap'}"></div>
+                    </div>
+               <div id="lbl_help_cockpit_text1" data-win-res="{textContent: 'lbl_help_cockpit_text1'}"></div>
+                <br />
+                <div id="lbl_help_cockpit_text2" data-win-res="{textContent: 'lbl_help_cockpit_text2'}"></div>
+                <br />
+                <div id="lbl_help_cockpit_text3" data-win-res="{textContent: 'lbl_help_cockpit_text3'}"></div>
+                <div id="lbl_help_cockpit_text4" data-win-res="{textContent: 'lbl_help_cockpit_text4'}"  class="subTitle"></div>
+                <div id="lbl_help_cockpit_text5" data-win-res="{textContent: 'lbl_help_cockpit_text5'}"></div>
+               <div id="lbl_help_cockpit_text6" data-win-res="{textContent: 'lbl_help_cockpit_text6'}"></div>
+                <div id="lbl_help_cockpit_text7" data-win-res="{textContent: 'lbl_help_cockpit_text7'}"></div>
+                <div id="lbl_help_cockpit_text8" data-win-res="{textContent: 'lbl_help_cockpit_text8'}"></div>
+              <br />
+                <div id="lbl_help_cockpit_text9" data-win-res="{textContent: 'lbl_help_cockpit_text9'}"></div>
+               <div id="lbl_help_cockpit_text10" data-win-res="{textContent: 'lbl_help_cockpit_text10'}"></div>
+               <div id="lbl_help_cockpit_text11" data-win-res="{textContent: 'lbl_help_cockpit_text11'}"></div>
+                <div id="lbl_help_cockpit_text12" data-win-res="{textContent: 'lbl_help_cockpit_text12'}"></div>
+               <div id="lbl_help_cockpit_text13" data-win-res="{textContent: 'lbl_help_cockpit_text13'}"></div>
+                <div id="lbl_help_cockpit_text14" data-win-res="{textContent: 'lbl_help_cockpit_text14'}"></div>
+                <div id="lbl_help_cockpit_text15" data-win-res="{textContent: 'lbl_help_cockpit_text15'}"></div>
+                <div id="lbl_help_cockpit_text16" data-win-res="{textContent: 'lbl_help_cockpit_text16'}"></div>
+                <br />
+               <div id="lbl_help_cockpit_text17" data-win-res="{textContent: 'lbl_help_cockpit_text17'}"> </div>
+
+                <div id="lbl_help_cockpit_text18" data-win-res="{textContent: 'lbl_help_cockpit_text18'}" class="subTitle"></div>
+               <div id="lbl_help_cockpit_text19" data-win-res="{textContent: 'lbl_help_cockpit_text19'}"></div>
+               <div id="lbl_help_cockpit_text20" data-win-res="{textContent: 'lbl_help_cockpit_text20'}"></div>
+                <div id="lbl_help_cockpit_text21" data-win-res="{textContent: 'lbl_help_cockpit_text21'}" class="subTitle"></div>
+                <div id="lbl_help_cockpit_text22" data-win-res="{textContent: 'lbl_help_cockpit_text22'}"></div>
+                <div id="lbl_help_cockpit_text23" data-win-res="{textContent: 'lbl_help_cockpit_text23'}"></div>
+                <div id="lbl_help_cockpit_text24" data-win-res="{textContent: 'lbl_help_cockpit_text24'}" class="subTitle"></div>
+              <div id="lbl_help_cockpit_text25" data-win-res="{textContent: 'lbl_help_cockpit_text25'}"></div>
+                <br />
+            </div>
+
+            <!-- ------------------------------------------------------------Data Expolorer description--------------------------------------------------------------------------------->
+            <div id="div_help_dataExplorer" style="display: none">
+                <div class="topDescriptionSnapHelp">
+                        <div id="div_help_dataExplorer_titleDescriptionSnap" class="titleDescriptionSnap" data-win-res="{textContent: 'div_help_dataExplorer_titleDescriptionSnap'}"></div>
+                        <div id="div_help_dataExplorer_subTitleDescriptionSnap" class="subTitleDescriptionSnap" data-win-res="{textContent: 'div_help_dataExplorer_subTitleDescriptionSnap'}"></div>
+                    </div>
+              <div id="lbl_help_dataExplorer_text1" data-win-res="{textContent: 'lbl_help_dataExplorer_text1'}"> </div>
+               <div id="lbl_help_dataExplorer_text2" data-win-res="{textContent: 'lbl_help_dataExplorer_text2'}" class="subTitle"></div>
+               <div id="lbl_help_dataExplorer_text3" data-win-res="{textContent: 'lbl_help_dataExplorer_text3'}"></div>
+               <div id="lbl_help_dataExplorer_text4" data-win-res="{textContent: 'lbl_help_dataExplorer_text4'}"></div>
+                <div id="lbl_help_dataExplorer_text5" data-win-res="{textContent: 'lbl_help_dataExplorer_text5'}"></div>
+                <div id="lbl_help_dataExplorer_text6" data-win-res="{textContent: 'lbl_help_dataExplorer_text6'}"></div>
+                <div id="lbl_help_dataExplorer_text7" data-win-res="{textContent: 'lbl_help_dataExplorer_text7'}"></div>
+                <div id="lbl_help_dataExplorer_text8" data-win-res="{textContent: 'lbl_help_dataExplorer_text8'}"></div>
+                <div id="lbl_help_dataExplorer_text9" data-win-res="{textContent: 'lbl_help_dataExplorer_text9'}"></div>
+                <div id="lbl_help_dataExplorer_text10" data-win-res="{textContent: 'lbl_help_dataExplorer_text10'}"></div>
+                <div id="lbl_help_dataExplorer_text11" data-win-res="{textContent: 'lbl_help_dataExplorer_text11'}"></div>
+                <br />
+                <div id="lbl_help_dataExplorer_text12" data-win-res="{textContent: 'lbl_help_dataExplorer_text12'}"></div>                
+                  <br />
+                <div id="lbl_help_dataExplorer_text13" data-win-res="{textContent: 'lbl_help_dataExplorer_text13'}" class="subTitle"></div>
+              <div id="lbl_help_dataExplorer_text14" data-win-res="{textContent: 'lbl_help_dataExplorer_text14'}"></div>
+                <br />
+               <div id="lbl_help_dataExplorer_text15" data-win-res="{textContent: 'lbl_help_dataExplorer_text15'}"></div>
+              <div id="lbl_help_dataExplorer_text16" data-win-res="{textContent: 'lbl_help_dataExplorer_text16'}"></div>
+                <br />
+               <div id="lbl_help_dataExplorer_text17" data-win-res="{textContent: 'lbl_help_dataExplorer_text17'}"></div>
+               <div id="lbl_help_dataExplorer_text18" data-win-res="{textContent: 'lbl_help_dataExplorer_text18'}"></div>
+               <div id="lbl_help_dataExplorer_text19" data-win-res="{textContent: 'lbl_help_dataExplorer_text19'}"> </div>
+                <div id="lbl_help_dataExplorer_text20" data-win-res="{textContent: 'lbl_help_dataExplorer_text20'}"></div>
+               <div id="lbl_help_dataExplorer_text21" data-win-res="{textContent: 'lbl_help_dataExplorer_text21'}"></div>
+                <div id="lbl_help_dataExplorer_text22" data-win-res="{textContent: 'lbl_help_dataExplorer_text22'}"></div>
+                  <br />
+                <br />
+            </div>
+
+             <!-- ------------------------------------------------------------Data sources description --------------------------------------------------------------------->
+            <div id="div_help_dataSources" style="display: none;">
+                 <div class="topDescriptionSnapHelp">
+                        <div id="div_help_dataSources_titleDescriptionSnap" class="titleDescriptionSnap" data-win-res="{textContent: 'div_help_dataSources_titleDescriptionSnap'}"></div>
+                        <div id="div_help_dataSources_subTitleDescriptionSnap" class="subTitleDescriptionSnap" data-win-res="{textContent: 'div_help_dataSources_subTitleDescriptionSnap'}"></div>
+                    </div>
+               <div id="lbl_help_dataSources_text1" data-win-res="{textContent: 'lbl_help_dataSources_text1'}"></div>
+                <br />
+             <div id="lbl_help_dataSources_text2" data-win-res="{textContent: 'lbl_help_dataSources_text2'}">  </div>
+                <div id="lbl_help_dataSources_text3" class="subTitle" data-win-res="{textContent: 'lbl_help_dataSources_text3'}"></div>
+               <div id="lbl_help_dataSources_text4" data-win-res="{textContent: 'lbl_help_dataSources_text4'}"></div>
+               <div id="lbl_help_dataSources_text5" data-win-res="{textContent: 'lbl_help_dataSources_text5'}"></div> 
+               <div id="lbl_help_dataSources_text6" data-win-res="{textContent: 'lbl_help_dataSources_text6'}"></div>
+               <div id="lbl_help_dataSources_text7" data-win-res="{textContent: 'lbl_help_dataSources_text7'}"></div>
+               <div id="lbl_help_dataSources_text8" data-win-res="{textContent: 'lbl_help_dataSources_text8'}"></div>
+                <br />
+              <div id="lbl_help_dataSources_text9" data-win-res="{textContent: 'lbl_help_dataSources_text9'}"></div> 
+                <div id="lbl_help_dataSources_text10" class="subTitle" data-win-res="{textContent: 'lbl_help_dataSources_text10'}"></div>
+               <div id="lbl_help_dataSources_text11" data-win-res="{textContent: 'lbl_help_dataSources_text11'}"></div>
+                    <br />
+              <div id="lbl_help_dataSources_text12" data-win-res="{textContent: 'lbl_help_dataSources_text12'}"></div> 
+                <br />
+            </div>
+
+        </div>
+        </div>
+
+    <!-- bottom appBar in help page-->
+    <div id="bottomAppBar" data-win-control="WinJS.UI.AppBar" style="background-color: #EC715A; -ms-user-select: none;" aria-label="Command Bar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRate', label:'', icon:'url(/images/bottomAppBar/rate.png)', section:'selection'}">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿.rightMenuLvItemsProfile {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: center;
+    -ms-grid-columns:11.9% 20px 20px 1fr;
+}
+
+.radioItemContainer {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.radioItem {
+    -ms-grid-row-align: center;
+    background-color: #4b3d5d;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    border-color: #4b3d5d;
+    border-style: solid;
+    border-width: 7px;
+    background-image: url("");
+}
+
+.textItem {
+    font-size: 10.5pt;
+    color: #FAF8EA;
+    font-family: Segoe UI;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-row-align: center;
+}
+
+/*----------- ListView RightMenu -----------*/
+
+
+   #gaProfilePage > .rightMenuLv .win-item:hover {
+        background-color: #403351;
+    }
+
+      #gaProfilePage > .rightMenuLv .win-container:hover {
+        background-color: #403351;
+    }
+
+      #gaProfilePage > .rightMenuLv .win-container.win-selected:hover {
+        background-color: #403351;
+    }
+
+
+/*----------- End ListView RightMenu -----------*/
+
+
+
+
+.gaProfilePage{
+    -ms-grid-rows: auto auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#gaProfilePage .rightMenuLv > .win-vertical.win-viewport {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#gaProfilePage .rightMenuLv .rightMenuContentSeparatedDivs {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:1fr;
+    -ms-grid-rows:1fr;
+}
+
+#gaProfilePage .rightMenuContentSeparatedDivs {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:11.9% 1fr 11.9%;
+    -ms-grid-rows:auto 10px;
+}
+
+#lbl_addGaProfile_errorUsedProfile {
+    display:none; 
+    font-size:14pt;
+}

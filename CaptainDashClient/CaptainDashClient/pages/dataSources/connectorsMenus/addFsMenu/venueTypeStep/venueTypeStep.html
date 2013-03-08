@@ -1,0 +1,26 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add Foursquare menu : Venue type</title>
+        <link href="/pages/dataSources/connectorsMenus/addFsMenu/venueTypeStep/venueTypeStep.css" rel="stylesheet" />
+                <script src="/pages/dataSources/connectorsMenus/addFsMenu/addFsMenuHelper.js"></script>
+        <script src="/pages/dataSources/connectorsMenus/addFsMenu/venueTypeStep/venueTypeStep.js"></script>
+        <script src="/pages/dataSources/connectorsMenus/addFsMenu/venueTypeStep/venueTypeStepHelper.js"></script>
+    </head>
+    <body>
+        <div id="template_lvVenueType" data-win-control="WinJS.Binding.Template">
+            <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuLvItems" data-win-bind="innerText: label;"></div>
+            </div>
+        </div>
+        <div id="fsVenueType">
+            <div id="lv_venueType" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvVenueType, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+            <div id="fsVenueTypeError" class="rightMenuErrorText"></div>
+        </div>
+    </body>
+</html>

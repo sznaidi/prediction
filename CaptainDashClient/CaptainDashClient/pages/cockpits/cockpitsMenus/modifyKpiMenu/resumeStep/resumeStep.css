@@ -1,0 +1,41 @@
+﻿/*-------------------------------
+-- Author : [M.C]
+-- Creation date : 30/01/2013
+------------------------------*/
+
+#modifyKpiResumeStep {
+    display: -ms-grid;
+    -ms-grid-rows: 230px 90px 1fr;
+    /*-ms-grid-rows: 300px 90px 1fr;  Uncomment to display compare & calculation*/
+    -ms-grid-columns: 1fr;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: -50px;
+}
+
+.modifyKpiResumeDiv {
+    display: -ms-grid;
+    -ms-grid-rows: 78px 28px 28px 28px 28px 28px 28px 28px;
+    -ms-grid-columns: 11.9% 1fr 110px 11.9%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    background-color: #372b47;
+}
+
+.modifyKpiToComplete {
+    display: -ms-grid;
+    -ms-grid-rows: 40px 20px 60px 20px 40px 25px 20px 40px 25px 25px 80px 50px;
+    -ms-grid-columns: 11.9% 1fr 11.9%;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+#btn_modifyKpi_groupBack {
+    -ms-grid-row:5; -ms-grid-column:1;-ms-grid-column-align:end; width:32px; margin-left:8px; margin-top:6px;
+}
+
+#lbl_modifyKpi_groupError {
+    -ms-grid-row:6; -ms-grid-column:2;
+}

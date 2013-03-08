@@ -1,0 +1,25 @@
+﻿<!--[MC] Creation date : 21/12/2012-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add Atlas connector menu</title>
+    <link href="/pages/DataSources/connectorsMenus/addGaMenu/gaWebPropertiesPage/gaWebPropertiesPage.css" rel="stylesheet" />
+    <script src="/pages/DataSources/connectorsMenus/addGaMenu/gaWebPropertiesPage/gaWebPropertiesPage.js"></script>
+</head>
+<body>
+
+
+    <div id="template_lvGoogleWebProperties" data-win-control="WinJS.Binding.Template" style="display: none;">
+        <div class="rightMenuContentSeparatedDivs" style="">
+            <div class="rightMenuLvItems" style="" data-win-bind="innerText: name;">
+            </div>
+        </div>
+    </div>
+
+    <div id="gaWebPropertiesPage" class="rightMenuContentDiv">
+        <div id="lv_googleWebProperties" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvGoogleWebProperties, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+    </div>
+
+</body>
+</html>

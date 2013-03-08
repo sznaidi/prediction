@@ -1,0 +1,21 @@
+﻿<!-------------------------------
+-- Author : HK
+-- Creation date : 30/01/2013
+------------------------------->
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <title>tw connectors Type</title>
+        <script src="/pages/dataSources/connectorsMenus/addTwMenu/connectorTypeStep/connectorsTypeStep.js"></script>
+         <script src="/pages/dataSources/connectorsMenus/addTwMenu/addTwMenuHelper.js"></script>
+    </head>
+    <body>
+        <div id="template_lvTwConnectorType" data-win-control="WinJS.Binding.Template">
+            <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuLvItems" data-win-bind="innerText: label;"></div>
+            </div>
+        </div>
+        <div id="lv_twConnectorType" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvTwConnectorType, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+        </div>
+    </body>
+ </html>

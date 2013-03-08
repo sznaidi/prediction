@@ -1,0 +1,27 @@
+﻿<!-------------------------------
+-- Author : [S.H]
+-- Creation date : 24/12/2012
+------------------------------->
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <title>fb connector Type</title>
+        <link href="/pages/dataSources/connectorsMenus/addFbMenu/searchResultStep/searchResultStep.css" rel="stylesheet" />
+        <script src="/pages/dataSources/connectorsMenus/addFbMenu/searchResultStep/searchResultStep.js"></script>
+    </head>
+    <body>
+        <!-- Search result page : 20/12/2012-->
+        <div id="template_lvSearchResults"  data-win-control="WinJS.Binding.Template">
+             <div class="rightMenuContentSeparatedDivs">
+                <div class="rightMenuLvFbItems">
+                  <div id="fbPageName" data-win-bind="innerText: name;"></div>
+                  <div id="fbPageCategory" data-win-bind="innerText: category;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="lv_searchResults" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvSearchResults, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">       
+        </div>
+
+    </body>
+   </html>

@@ -1,0 +1,51 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 05/02/2013
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add serie menu : resume step</title>
+        <link href="/pages/dataExplorer/dataExplorerMenus/addSerie/resumeStep/resume.css" rel="stylesheet" />
+        <script src="/pages/dataExplorer/dataExplorerMenus/addSerie/resumeStep/resume.js"></script>
+    </head>
+    <body>
+
+        <!--[A.A]: lv chart type template-->
+        <div id="lvChartTypeTemplate" data-win-control="WinJS.Binding.Template">
+            <div class="lvChartTypeContent">
+                <div class="lvChartTypeContentImg"><img data-win-bind="src : image;" /></div>
+                <div class="lvChartTypeContentLabel" data-win-bind="innerText: label;"></div>
+            </div>
+        </div>
+
+        <div id="addSerieResumeStep">
+
+            <!--[A.A]: Resume content Grid-->
+            <div class="addSerieResumeDiv">
+                <div id="lbl_addSerieResume_resume" class="lblResume" style="-ms-grid-row:1; -ms-grid-column:2;" data-win-res="{textContent: 'lbl_addSerieResume_resume'}"></div>
+                <div class="lblResumeLeft" style="-ms-grid-row:2;" id="lbl_addSerie_connector"></div><div id="lbl_addSerieResume_source" class="lblResumeRight" style="-ms-grid-row:2;" data-win-res="{textContent: 'lbl_addSerieResume_source'}"></div>
+                <div class="lblResumeLeft" style="-ms-grid-row:3;" id="lbl_addSerie_account"></div><div class="lblResumeRight" id="lbl_addSerieResume_account" style="-ms-grid-row:3;" data-win-res="{textContent: 'lbl_addSerieResume_account'}"></div>
+                <div class="lblResumeLeft" style="-ms-grid-row:4;" id="lbl_addSerie_metric"></div><div id="lbl_addSerieResume_item" class="lblResumeRight" style="-ms-grid-row:4;" data-win-res="{textContent: 'lbl_addSerieResume_item'}"></div>
+            </div>
+
+            <!--[A.A]: Middle content-->
+            <div class="addSerieMiddleDiv">
+                <div id="lbl_addSerieResume_visualisation" class="lbl_addSerieResume_visualisation" data-win-res="{textContent: 'lbl_addSerieResume_visualisation'}"></div>
+                <div  id="lbl_addSerieResume_seconDaxe"  style="-ms-grid-row:2; -ms-grid-column:2; font-size: 11pt; font-family: 'Segoe UI'; color: #A49BB0;" data-win-res="{textContent: 'lbl_addSerieResume_seconDaxe'}"></div>
+                <div style="-ms-grid-row:3; -ms-grid-column:2;">
+                    <div data-win-control="WinJS.UI.ToggleSwitch" id="tgl_addSerie_axis" data-win-options="{labelOn: 'On', labelOff: 'Off'}"></div>
+                </div>
+            </div>
+
+            <!--[A.A]: Select chart type-->
+            <div class="addSerieChartTypeDiv">
+                <div id="lvChartType" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvChartTypeTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

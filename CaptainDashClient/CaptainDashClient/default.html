@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CaptainDashClient</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- CaptainDashClient references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/fonts.css" rel="stylesheet" />
+    <link href="/js/rightMenu/rightMenu.css" rel="stylesheet" />
+    <link href="/js/popup/popup.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/pages/dataExplorer/d3jsAccess/cdd3/d3.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.svg.js"></script>
+    <script src="/pages/dataExplorer/d3jsAccess/cdd3/cdd3.js"></script>
+    <script src="/pages/dataExplorer/d3jsAccess/d3jsAccess.js"></script>
+    <script src="/pages/dataExplorer/d3jsAccess/d3jsAccessHelper.js"></script>
+    <script src="/js/cdHelper.js"></script>
+    <script src="/js/messages/messages.js"></script>
+    <script src="/js/messages/messagesHelper.js"></script>
+    <script src="/js/connectionHelper.js"></script>
+    <script src="/pages/login/loginHelper.js"></script>
+    <script src="/js/pages.js"></script>
+    <script src="/js/cdServicesHelper.js"></script>
+    <script src="/js/cdServicesAccess.js"></script>
+    <script src="/pages/login/loginServices.js"></script>
+    <script src="/pages/login/login.js"></script>
+    <script src="/js/rightMenu/rightMenuHelper.js"></script>
+    <script src="/js/rightMenu/rightMenu.js"></script>
+    <script src="/js/popup/popup.js"></script>
+    <script src="/js/pages.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/pages/help/helpUtil.js"></script>
+    <script src="/js/MarkedUp.js"></script>
+
+    <script src="/js/dynamicTile.js"></script>
+    <!--Uncomment only for test-->
+    <script src="/pages/DataSources/connectorsServices/connectorsServices.js"></script>
+    <script src="/pages/DataSources/connectorsApi/connectorsApiHelper.js"></script>
+    <script src="/pages/DataSources/connectorsApi/connectorsApiFactory.js"></script>
+    <script src="/pages/DataSources/connectorsApi/connectorApi.js"></script>
+    <script src="/pages/DataSources/connectorsTemplate/connectorsTemplate.js"></script>
+    <script src="/pages/dataSources/dataSourcesHelper.js"></script>
+    <script src="/pages/dataExplorer/chartHelper.js"></script>
+    <script src="/pages/dataExplorer/explorationTemplate/exploration.js"></script>
+    <script src="/pages/dataExplorer/serieTemplate/serie.js"></script>
+    <script src="/js/charmeMenu.js"></script>
+    <script src="/pages/dataExplorer/dataExplorerServices/dataExplorerServices.js"></script>
+    <script src="/pages/dataExplorer/dataExplorer.js"></script>
+       <script src="/pages/cockpits/cockpits.js"></script>
+    <script src="/pages/cockpits/cockpitHelper.js"></script>
+    <script src="/pages/cockpits/cockpitsServices/cockpitsService.js"></script>
+</head>
+<body>
+    <progress id="loadingBar"></progress>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator"></div>
+    <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}" type="button"></button>
+    </div> -->
+
+    <div id="splashScreen" class="splashScreen"><progress class="progressBarLog"></progress></div>
+    <!-- [A.A]: activate/desactivate controls -->
+    <div id="coverControls"></div>
+
+    <!--HK: message box container-->
+    <div class="divMessageGlobal" style="visibility: hidden; height: 100%;"></div>
+    <!--End message box container-->
+
+    <!--HK: message popup container-->
+    <div class="divPopUpGlobal" style="visibility: hidden;"></div>
+    <!--End message popup container-->
+
+    <!-- [A.A]: RightMenu -->
+    <div id="rightMenu" class="rightMenu">
+        <div id="rightMenuDiv" class="rightMenuDiv">
+            <div class="rightMenuHeader">
+                <div class="rightMenuMarginTop"></div>
+                <div id="btn_rightMenu_back" class="btn_rightMenu_back"></div>
+                <div id="rightMenuTitle" class="rightMenuTitle"></div>
+            </div>
+            <div id="rightMenuSubtitle" class="rightMenuSubtitle"></div>
+            <div id="rightMenuContent" class="rightMenuContent"></div>
+            <div id="rightMenuLoadingDiv" class="rightMenuLoadingDiv"><progress></progress></div>
+        </div>
+        <div id="rightMenuCoverControls" class="rightMenuCoverControls"></div>
+    </div>
+    <!-- End RightMenu -->
+
+    <div id="topAppBarInIntro" data-win-control="WinJS.UI.AppBar" class="topAppBar" aria-label="Command Bar" data-win-options="{layout:'custom',placement:'top'}">
+        <div style="cursor: default;" class="divTopAppBar">
+            <div id="cmdHelp" class="topAppBarItem">
+                <div id="logoHelpSnap" class="logoAppBarElem"></div>
+                <div id="titleHelpSnap" class="titleAppBarElem">Help </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top AppBar -->
+    <div id="topAppBar" data-win-control="WinJS.UI.AppBar" class="topAppBar" aria-label="Command Bar" data-win-options="{layout:'custom',placement:'top'}">
+        <div style="cursor: default;" class="divTopAppBar">
+            <div id="cmdCockpit" class="topAppBarItem" onclick="Application.navigator.redirect(Pages.dashboards)">
+                <div id="logoCockpit" class="logoAppBarElem"></div>
+                <div id="titleCockpit" class="titleAppBarElem">Dashboards</div>
+            </div>
+            <div id="cmdDataExplorer" class="topAppBarItem" onclick="Application.navigator.redirect(Pages.dataExplorer)">
+                <div id="logoDataExplorer" class="logoAppBarElem"></div>
+                <div id="titleDataExplorer" class="titleAppBarElem">Explorer</div>
+            </div>
+            <div id="cmdDataSources" class="topAppBarItem" onclick="Application.navigator.redirect(Pages.dataSources)">
+                <div id="logoDataSource" class="logoAppBarElem"></div>
+                <div id="titleDataSource" class="titleAppBarElem">Sources</div>
+            </div>
+            <div id="cmdHelpTopAppBar" class="topAppBarItem">
+                <div id="logoHelp" class="logoAppBarElem"></div>
+                <div id="titleHelp" class="titleAppBarElem">Help </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

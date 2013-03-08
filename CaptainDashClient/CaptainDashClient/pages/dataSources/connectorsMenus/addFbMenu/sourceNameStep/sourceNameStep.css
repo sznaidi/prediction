@@ -1,0 +1,55 @@
+﻿/*-------------------------------
+-- Author : [S.H]
+-- Creation date : 24/12/2012
+------------------------------*/
+
+#fbSourceNamePage {
+    display:-ms-grid;
+}
+
+#fbSourceNamePage > .rightMenuCenteredDiv {
+     display:-ms-grid;
+     -ms-grid-rows: 20px 50px 60px 60px auto 50px;
+     -ms-grid-columns: 1fr;
+    width: 100%;
+}
+
+
+#fbSourceNamePage > .rightMenuText {
+    -ms-grid-row: 1;
+}
+
+#txt_fbSourceNameTxt_input {
+    -ms-grid-row: 2;
+}
+
+#checkbox_dfltWidget {
+    -ms-grid-row: 4;
+    margin:0;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+#checkbox_dfltWidget_input {
+    background-color: #fff;
+    margin:0;
+    padding:0;
+    border:none;
+    height:18px;
+    width: 18px;
+}
+
+
+#lbl_fbSourceName_titleImput {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#lbl_fbSourceName_error {
+    -ms-grid-row: 3;
+}
+
+#btn_fbSourceName_connect {
+    -ms-grid-row: 6;
+}

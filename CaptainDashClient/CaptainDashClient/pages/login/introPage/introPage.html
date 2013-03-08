@@ -1,0 +1,57 @@
+﻿<!----------------------------------
+-- Author : [S.H]
+-- Creation date : 17/12/2012
+---------------------------------->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/pages/login/introPage/introPage.css" rel="stylesheet" />
+         <script src="/pages/login/introPage/introPage.js"></script>
+        <title> Intro </title>
+    </head>
+    <body>
+        <div class="contentBackBtn">
+              <div id="img_intro_worldIntro">
+              </div>
+         </div>
+         <div id="div_intro_content">
+           <div id="div_intro_welcomeText" class="welcomeText">
+               <div id="txt_intro_welcomeTxt1">
+                   <div id="lbl_introPage_welcomeTxt11" data-win-res="{textContent: 'lbl_introPage_welcomeTxt11'}"></div>
+                    <div id="lbl_introPage_welcomeTxt12" data-win-res="{textContent: 'lbl_introPage_welcomeTxt12'}"> </div>
+               </div>
+               <div id="txt_intro_welcomeTxt2" style="display: none;">
+                   <div id="lbl_introPage_welcomeTxt21" data-win-res="{textContent: 'lbl_introPage_welcomeTxt21'}"></div>
+                   <div id="lbl_introPage_welcomeTxt22" data-win-res="{textContent: 'lbl_introPage_welcomeTxt22'}"></div>
+               </div>
+               <div id="txt_intro_welcomeTxt3" style="display: none;">
+                   <div id="lbl_introPage_welcomeTxt31" data-win-res="{textContent: 'lbl_introPage_welcomeTxt31'}"></div>
+                   <div id="lbl_introPage_welcomeTxt32" data-win-res="{textContent: 'lbl_introPage_welcomeTxt32'}"></div>
+               </div>
+               <div id="txt_intro_welcomeTxt4" style="display: none;">
+                   <div id="lbl_introPage_welcomeTxt41" data-win-res="{textContent: 'lbl_introPage_welcomeTxt41'}"></div>
+                   <div id="lbl_introPage_welcomeTxt42" data-win-res="{textContent: 'lbl_introPage_welcomeTxt42'}"></div>
+               </div>
+               <div id="txt_intro_welcomeTxt5" style="display: none;">
+                   <div id="lbl_introPage_welcomeTxt51" data-win-res="{textContent: 'lbl_introPage_welcomeTxt51'}"></div>
+                   <div id="lbl_introPage_welcomeTxt52" data-win-res="{textContent: 'lbl_introPage_welcomeTxt52'}"></div>
+              </div>
+              <div id="txt_intro_welcomeTxt6" style="display: none;">
+                  <div id="lbl_introPage_welcomeTxt61" data-win-res="{textContent: 'lbl_introPage_welcomeTxt61'}"></div>
+                   <div id="lbl_introPage_welcomeTxt62" data-win-res="{textContent: 'lbl_introPage_welcomeTxt62'}"></div>
+              </div>         
+          </div>                       
+            <div id="btn_intro_launchButton" class="loginBtn">
+                <div id="btn_introPage_launch" class="loginBtnTxt" data-win-res="{textContent: 'btn_introPage_launch'}"> 
+                </div>
+           </div>
+        </div>
+        <div id="div_intro_bottomAppBar" data-win-control="WinJS.UI.AppBar">
+             <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'listenAgain',label:'',icon:'url(/images/bottomAppBar/listenAgain.png)',section:'global'}">
+             </button>
+             <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'skip',label:'',icon:'url(/images/bottomAppBar/skip.png)',section:'global'}">
+             </button>
+        </div>
+        <audio id="audioElement" src="/audios/intro.mp3"></audio>
+    </body>
+</html>

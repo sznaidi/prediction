@@ -1,0 +1,43 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 21/12/2012
+------------------------------*/
+
+#twSourceNameStep > .rightMenuCenteredDiv {
+     display:-ms-grid;
+     -ms-grid-rows: 20px 50px 60px 60px auto 50px;
+     -ms-grid-columns: 1fr;
+    width: 100%;
+}
+
+
+#twSourceNameStep > .rightMenuText {
+    -ms-grid-row: 1;
+}
+
+#txt_twSourceName_sourceName {
+    -ms-grid-row: 2;
+}
+
+#lbl_twSourceName_error {
+    -ms-grid-row: 3;
+}
+
+#btn_twSourceName_connect {
+    -ms-grid-row: 6;
+}
+#checkbox_dfltWidget {
+    -ms-grid-row: 4;
+    margin:0;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+#checkbox_dfltWidget_input {
+    background-color: #fff;
+    margin:0;
+    padding:0;
+    border:none;
+    height:18px;
+    width: 18px;
+}

@@ -1,0 +1,298 @@
+﻿.contenairLegendGlobal {
+    display: -ms-grid;
+    -ms-grid-rows: 'auto 4px auto 4px auto';
+    -ms-grid-colums: '100px 1fr';
+    margin: 0px 2px 50px 2px;
+    width: 250px;
+    height: auto;
+}
+
+.legende {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-rows: '20px auto';
+    -ms-grid-colums: '100px 1fr';
+    height: auto;
+    width:285px;
+    background-color: #f1eedc;
+}
+
+.div_dimensions {
+    display: none;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    background-color: #f1eedc;
+    width:285px;
+}
+
+.div_legend_advencedContainer {
+    display: none;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-rows: '1fr';
+    -ms-grid-colums: '37px 1fr';
+    height: 50px;
+    width:285px;
+    background-color: #f1eedc;
+    margin: 2px 0 2px 0;
+}
+
+.div_legend_topContainer {
+    display:-ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-rows: '1fr';
+    -ms-grid-colums: '37px 1fr 37px';
+    margin-top: 10px;
+    height: auto;
+    width: 285px;
+    margin-bottom : 5px;
+}
+
+.pictoLegend {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: start;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top:5px;
+    background-position: center center;
+}
+.picto {
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+        margin-left: 10px;
+    margin-top:5px;
+    background-position: center center;
+}
+
+.txt_legend_title {
+    text-overflow: ellipsis;
+
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-row-align: start;
+    font-family: 'Segoe UI Light';
+    font-size: 20px;
+    color: #6d6b62;
+    width: 195px;
+    height: auto;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-left:3px;
+    word-wrap: break-word; 
+}
+
+.img_legend_showHideFlyout {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-row-align: start;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 0 5px;
+    background-image: url('/pages/dataExplorer/images/btnDeleteModify.png');
+    background-repeat: no-repeat;
+}
+
+.div_ContainerDeatail {
+    display: none;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-rows: '25px 25px 25px 25px 25px';
+    -ms-grid-colums: '1fr';
+    margin: 5px 5px 10px 45px;
+}
+
+.sourceLegend {
+    display: -ms-grid;
+    -ms-grid-rows: '1fr';
+    -ms-grid-colums: '100px 1fr';
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    width: 250px;
+}
+
+.accountLegend {
+    display: -ms-grid;
+    -ms-grid-rows: '1fr';
+    -ms-grid-colums: '100px 1fr';
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    width: 250px;
+}
+
+.yaxisLegend {
+    display: -ms-grid;
+    -ms-grid-rows: '1fr';
+    -ms-grid-colums: '100px 1fr';
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    width: 250px;
+}
+
+.lbl_legend {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #c7c2b0;
+    text-align: right;
+}
+
+.legendValue {
+    /*display: -ms-grid;*/
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #a6a191;
+    -ms-grid-row-align: start;
+    overflow: hidden; 
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+}
+
+.img_legend_Advenced {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    background-image:  url('/pages/dataExplorer/images/btnAdvencedFilter.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    margin: 14px 0 0 10px;
+}
+
+.lbl_legend_Advenced {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-row-align: start;
+    font-family: 'Segoe UI Semilight';
+    font-size: 20px;
+    color: #a6a191;
+    margin-top: 10px;
+}
+
+.flyoutLegend {
+    display: none;
+    -ms-grid-rows:  40px 40px 20px 40px;
+    -ms-grid-columns: 1fr;
+    height: auto;
+    width: 140px;
+    position: relative;
+    margin-top: -15px;
+    margin-left: -90px;
+    color: #4c4a43;
+    font-family: Segoe UI Light;
+    font-size: 20px;
+    background-color: #ffffcd;
+    border: 2px solid #e6e6a9;
+    z-index: 10;
+}
+
+.deleteLegend,.modifyLegend,.sleepLegend{
+   padding-left:15px;
+   padding-top: 5px;
+  
+    height: 40px;
+
+    -ms-grid-row-align: center;
+}
+
+.containerDeleteLegend {
+    -ms-grid-row: 1;
+    color: #4c4a43;
+    display: -ms-grid;
+    height: 40px;
+    background-color: #ffffcd;
+}
+
+.containerModifyLegend {
+    -ms-grid-row: 2;
+ color: #4c4a43;
+    display: -ms-grid;
+    height: 40px;
+    background-color: #ffffcd;
+}
+
+.separatorLegend {
+     -ms-grid-row: 3;
+    display: -ms-grid;
+    height: 20px;
+    margin-top:5px;
+    background-color: #ffffcd;
+    background-image: url('/pages/dataExplorer/images/separatorFlyout.png');
+    background-repeat: no-repeat;
+}
+
+.containerSleepLegend {
+    -ms-grid-row: 4;
+    color: #4c4a43;
+    display: -ms-grid;
+    height: 40px;
+    background-color: #ffffcd;
+}
+
+
+.containerDeleteLegend:hover, .containerModifyLegend:hover, .containerModifyLegend:active, .containerModifyLegend:active, .containerSleepLegend:hover, .containerSleepLegend:active {
+        background-color: #ebc24b;
+        color: #4c4a43;
+    }
+
+.div_dimension_value{
+    display: block;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: start;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #a6a191;
+    margin-left: 37px;
+    margin-bottom: 10px;
+    height:auto;
+}
+
+.div_dimension_key {
+    display: -ms-grid;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: start;
+    font-family: 'Segoe UI Semilight';
+    font-size: 20px;
+    color: #4c4a43;
+    margin: 20px 0 20px 37px;
+}
+
+.newSerieLegend {
+    height: 50px;
+    width: 285px;
+    background-image: url('/pages/dataExplorer/images/btnLegendAddSerie.png');
+    background-position-x: 17px;
+    background-repeat: no-repeat;
+    color: #c7c2b0;
+    border-width: 1px;
+    border: solid;
+    border-color: rgb(250,248,234);
+    margin-left: -3px;
+}
+
+.newSerieLegend:hover {
+    background-color: rgb(246,243,226);
+}
+
+.txt_newSerieLegend {
+    padding-top: 10px;
+    padding-left: 47px;
+    font-family: Segoe UI Semilight;
+    font-size: 20px;
+}
+
+
+

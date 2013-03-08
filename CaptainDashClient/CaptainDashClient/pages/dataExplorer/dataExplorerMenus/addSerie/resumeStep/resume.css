@@ -1,0 +1,76 @@
+﻿#addSerieResumeStep {
+    display: -ms-grid;
+    -ms-grid-rows: 188px 160px 1fr;
+    -ms-grid-columns: 1fr;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    overflow:hidden;
+    margin-top: -50px;
+}
+
+.addSerieResumeDiv {
+    display: -ms-grid;
+    -ms-grid-rows: 78px 28px 28px 28px;
+    -ms-grid-columns: 11.9% 1fr 110px 11.9%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    background-color: #372b47;
+}
+
+.addSerieMiddleDiv {
+    display: -ms-grid;
+    -ms-grid-rows: 95px 25px 50px;
+    -ms-grid-columns: 11.9% 1fr 11.9%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.lbl_addSerieResume_visualisation {
+    -ms-grid-column: 2;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: start;
+    -ms-grid-row:1;
+    min-width: 250px;
+    font-family: 'Segoe UI Semilight';
+    font-size: 20pt;
+    color: rgb(164, 155, 176);
+    margin-top:6px;
+}
+
+.addSerieChartTypeDiv {
+    -ms-grid-row: 3;
+}
+
+.lvChartTypeContent {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:11.9% 145px 1fr 11.9%;
+    -ms-grid-rows:1fr;
+}
+
+.lvChartTypeContentImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; 
+    -ms-grid-row-align: center;
+}
+
+.lvChartTypeContentLabel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3; 
+    -ms-grid-row-align: center;
+}
+
+.addSerieChartTypeDiv .rightMenuLv .win-vertical .win-item {
+    height: 110px;
+}
+
+.addSerieMiddleDiv .win-toggleswitch .win-switch {
+    margin-left:53px;
+}
+
+#addSerieResumeStep .lblResume {
+    margin-top:6px;
+}

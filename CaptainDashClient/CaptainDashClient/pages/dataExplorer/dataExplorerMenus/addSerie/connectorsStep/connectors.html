@@ -1,0 +1,24 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 05/02/2013
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add serie menu : connectors step</title>
+    <script src="/pages/dataExplorer/dataExplorerMenus/addSerie/connectorsStep/connectors.js"></script>
+</head>
+<body>
+
+    <!-- Connectors step -->
+    <div id="lvConnectorsTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs">
+            <div class="rightMenuLvItems" data-win-bind="innerText: title;"></div>
+        </div>
+    </div>
+    <div id="lvConnectors" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:lvConnectorsTemplate, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿/* ---------------------------------
+-- Author : [A.A]
+-- Creation date : 17/01/2013
+---------------------------------*/
+
+#div_signIn_signInContent {
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-rows: 92px 20px 40px 20px 20px 40px 20px 59px 62px 25px;
+    display: -ms-grid;
+}
+
+#lbl_signIn {
+    -ms-grid-row: 1;
+}
+
+#lbl_signIn_emailLabel {
+    -ms-grid-row: 2;
+    -ms-grid-row-align: end;
+}
+
+#txt_signIn_emailAdress {
+    -ms-grid-row: 3;
+    margin-left: 3px;
+}
+
+#lbl_signIn_emailAdressError {
+    -ms-grid-row: 4;
+    -ms-grid-row-align: center;
+}
+
+#lbl_signIn_passwordLabel {
+    -ms-grid-row: 5;
+    -ms-grid-row-align: end;
+}
+
+#txt_signIn_password {
+    -ms-grid-row: 6;
+    margin-left: 3px;
+}
+
+#lbl_signIn_passwordError {
+    -ms-grid-row: 7;
+}
+
+.div_signIn_buttons {
+    -ms-grid-row: 8;
+    display: -ms-grid;
+    -ms-grid-columns: 90px 10px 90px 5px 50px;
+    -ms-grid-row-align: end;
+    margin-left: 3px;
+}
+
+#btn_signIn_signIn {
+    -ms-grid-column: 1;
+    -ms-grid-row-align: start;
+}
+
+#btn_signIn_register {
+    -ms-grid-column: 3;
+    -ms-grid-row-align: start;
+}
+
+#prog_signIn_loadingRing {
+    -ms-grid-column: 5;
+    -ms-grid-column-align:end;
+    display:none;
+}
+
+#prog_signIn_loadingRing progress::-ms-fill {
+    -ms-animation-name: -ms-ring;
+}
+
+#prog_signIn_loadingRing progress:indeterminate {
+    width: 29px;
+    height: 29px; 
+    color: #EC715A;
+}
+
+#div_signIn_forgotPassword {
+    -ms-grid-row: 9;
+    -ms-grid-row-align: start;
+    -ms-grid-row-align: end;
+    margin-left: 3px;
+}
+
+#div_signIn_getFullProfil {
+    -ms-grid-row: 10;
+    -ms-grid-row-align: start;
+    -ms-grid-row-align: end;
+    margin-left: 3px;
+}
+
+
+.hlink_signIn {
+    text-decoration:underline;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#837891;
+}
+    .hlink_signIn:hover {
+        color:#C2B9CD;
+    }
+
+    .hlink_signIn:active {
+        color:#998FA6;
+    }
+
+/*----------- Button Register -----------*/
+#btn_signIn_register {
+    background-color: #998FA6; 
+    border: 2px solid #C2B9CD; 
+    color: #FAF8EA;
+    height: 30px; 
+    width:90px; 
+    font-size: 11pt;
+}
+
+#btn_signIn_register:hover { 
+    background-color: #837891; 
+    border: 2px solid #C2B9CD;
+    color: #FAF8EA;
+}
+
+#btn_signIn_register:hover:active { 
+    background-color: #837891; 
+    border: 0px;
+}
+/*----------- End Button -----------*/
+
+
+#div_signIn_signInContent .pageTitle {
+    width:450px;
+}
+
+
+@media screen and (-ms-view-state: snapped) {
+    #div_signIn_signInContent .pageTitle {
+       width:300px;
+       font-size:15pt;
+    }
+}

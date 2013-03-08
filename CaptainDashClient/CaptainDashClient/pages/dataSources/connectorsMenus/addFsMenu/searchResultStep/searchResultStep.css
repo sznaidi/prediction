@@ -1,0 +1,99 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 25/12/2012
+------------------------------*/
+
+.lvVenues {
+    height: 100%;
+    width: 100%;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+
+.lvVenuesName {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    padding-top:4px;
+
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    position: relative;
+    width:100%;
+    font-family: Segoe UI;
+    font-size:15pt;
+    color:#FAF8EA;
+}
+
+.lvVenuesAddress {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  
+    font-family: Segoe UI;
+    font-size:11.25pt;
+    color:#a49bb0;
+    height: 117%;
+    width: 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lvVenuesImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    height:32px;
+    width:32px;
+    margin-top:10px;
+
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: auto;
+    background-color: #f1eedc;
+}
+
+
+    .lvVenues :not(.win-footprint).win-container {
+        background-color: #403351;
+    }
+
+    .lvVenues .win-vertical .win-item {
+        cursor: default;
+        overflow: hidden;
+        width: 100%;
+        height: 120px;
+
+    }
+
+    .lvVenues > .win-vertical .win-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .lvVenues .win-item:hover {
+        background-color: #4b3d5d;
+    }
+
+    .lvVenues .win-container:hover {
+        background-color: #4b3d5d;
+        outline: rgba(255, 255, 255, 0) solid 0px;
+    }
+
+    .lvVenues .win-container.win-selected:hover {
+        background-color: #4b3d5d;
+    }
+
+    .lvVenues > .win-vertical .win-container {
+        margin:0px;
+    } 
+
+.lvVenuesContent {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:11.9% 50px 1fr 11.9%;
+    -ms-grid-rows:36px 1fr;
+}

@@ -1,0 +1,75 @@
+﻿#modifySerieResumeStep {
+    display: -ms-grid;
+    /*-ms-grid-rows: 150px 180px 1fr; uncomment to active filters*/ 
+    -ms-grid-rows: 150px 100px 1fr;
+    -ms-grid-columns: 1fr;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+    /*Top*/
+    .div_modifySerie_topPage {
+        -ms-grid-row: 1;
+        display: -ms-grid;
+        -ms-grid-rows: 24px 60px 24px 60px;
+        -ms-grid-columns: 11.9% 1fr 11.9%;
+    }
+
+    /*Middle*/
+    .div_modifySerie_middlePage {
+        -ms-grid-row: 2;
+        display: -ms-grid;
+        /*-ms-grid-rows: 80px 20px 80px; uncomment to active filters*/
+        -ms-grid-rows: 0px 20px 80px;
+        -ms-grid-columns: 1fr;
+    }
+
+        .div_modifySerie_visualization {
+            display:-ms-grid;
+            -ms-grid-row: 3;
+            -ms-grid-columns: 11.9% 1fr 20px 11.9%;
+        }
+    
+    /*Bottom*/
+    .div_modifySerie_bottomPage {
+        -ms-grid-row: 3;
+        display: -ms-grid;
+        -ms-grid-rows: 60px 30px 20px 50px 60px 1fr;
+        -ms-grid-columns: 11.9% 1fr 11.9%;
+    }
+
+        .div_modifySerie_yAxis {
+             display:-ms-grid;
+            -ms-grid-row: 1;
+            -ms-grid-column: 2; 
+            -ms-grid-columns: 1fr 1fr;
+        }
+
+
+
+
+#modifySerieResumeStep .win-toggleswitch .win-switch {
+    margin-left:0px;
+}
+
+
+.lbl_goToAdvancedFilters {
+    -ms-grid-column:2; min-width:250px;-ms-grid-row-align: center; -ms-grid-column-align:start;
+    color: rgb(164, 155, 176);
+    font-family: 'Segoe UI Semilight';
+    font-size: 20pt;
+}
+
+#lbl_modifySerie_advanced:hover {
+    background-color: #4b3d5d;
+}
+
+#lbl_modifySerie_visualization:hover {
+    background-color: #4b3d5d;
+}
+
+#modifySerieResumeStep .win-toggleswitch .win-label {
+    min-width:0px;
+}

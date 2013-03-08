@@ -1,0 +1,48 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 14/02/2013
+------------------------------->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modify serie menu : resume step</title>
+        <link href="/pages/dataExplorer/dataExplorerMenus/modifySerie/resumeStep/resume.css" rel="stylesheet" />
+        <script src="/pages/dataExplorer/dataExplorerMenus/modifySerie/resumeStep/resume.js"></script>
+    </head>
+    <body>
+        
+ <div id="modifySerieResumeStep">
+
+     <div class="div_modifySerie_topPage"> 
+         <div class="rightMenuText" style="-ms-grid-row:1; -ms-grid-column:2;" id="lbl_modifySerie_connectorType"></div>
+         <div  style="-ms-grid-row:2; -ms-grid-column:2;"><div id="slct_modifySerie_account" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div></div>
+         <div id="div_modifySerie_topPage_item" class="rightMenuText" style="-ms-grid-row:3; -ms-grid-column:2;" data-win-res="{textContent: 'div_modifySerie_topPage_item'}"></div>
+         <div  style="-ms-grid-row:4; -ms-grid-column:2;"><div id="slct_modifySerie_metric" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div></div>
+     </div>
+     
+     <div class="div_modifySerie_middlePage">
+         <div class="rightMenuText" style="-ms-grid-row:1; -ms-grid-column:1; display:none" id="lbl_modifySerie_advanced" data-win-res="{textContent: 'lbl_modifySerie_advanced'}"><div style="margin-left:11.9%; padding-top:28px;" ></div></div>
+         <div style="-ms-grid-row:2; -ms-grid-column:1; -ms-grid-column-align: center; -ms-grid-row-align: center;"><img src="/images/rightMenu/separator.png"/></div>
+         <div class="div_modifySerie_visualization" id="lbl_modifySerie_visualization">
+             <div id="lbl_goToAdvancedFilters_visualisation" class="lbl_goToAdvancedFilters" style="-ms-grid-row:1; -ms-grid-column:2; padding-top:18px;" data-win-res="{textContent: 'lbl_goToAdvancedFilters_visualisation'}"></div>
+             <div style="-ms-grid-row:1; -ms-grid-column:3; -ms-grid-column-align: end; padding-top:25px;" id="imgPicto" class="pictoLegend"></div>
+         </div>
+     </div>
+
+     <div class="div_modifySerie_bottomPage">
+         <div class="div_modifySerie_yAxis">
+             <div id="lbl_goToAdvancedFilters_secondAxe" class="lbl_goToAdvancedFilters" style="-ms-grid-row:1; -ms-grid-column:1;" data-win-res="{textContent: 'lbl_goToAdvancedFilters_secondAxe'}"></div>
+             <div style="-ms-grid-row:1; -ms-grid-column:2; -ms-grid-column-align: end; margin-top: 10px;">
+                 <div data-win-control="WinJS.UI.ToggleSwitch" id="tgl_modifySerie_yAxis" data-win-options="{labelOn: 'On', labelOff: 'Off'}"></div>
+             </div>
+         </div>
+         <div style="-ms-grid-row:2; -ms-grid-column:2; -ms-grid-column-align: center;"><img src="/images/rightMenu/separator.png"/></div>
+         <div id="lbl_modifySerie_name"  class="rightMenuText" style="-ms-grid-row:3; -ms-grid-column:2;" data-win-res="{textContent: 'lbl_modifySerie_name'}"></div>
+         <input style="-ms-grid-row:4; -ms-grid-column:2;" type="text" id="txt_modifySerie_title" />
+         <div class="rightMenuErrorText" style="-ms-grid-row:5; -ms-grid-column:2;" id="lbl_modifySerie_titleError" data-win-res="{textContent: 'lbl_modifySerie_titleError'}"></div>
+         <div style="-ms-grid-row:6; -ms-grid-column:2;"><button id="btn_modifySerie_apply" class="rightMenuBtn" data-win-res="{textContent: 'btn_modifySerie_apply'}"></button></div>
+     </div>
+
+ </div>
+    </body>
+</html>

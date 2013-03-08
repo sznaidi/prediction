@@ -1,0 +1,48 @@
+﻿/*-------------------------------
+-- Author : [A.A]
+-- Creation date : 21/01/2013
+------------------------------*/
+
+#dashboardMenuContent > .rightMenuCenteredDiv {
+    -ms-grid-rows: 20px 60px 20px 120px 45px 40px;
+    margin-top:-45px;
+}
+
+#lbl_dashboardMenu_dashboardName {
+    -ms-grid-row: 1;
+}
+
+#txt_dashboardMenu_dashboardName {
+    -ms-grid-row: 2;
+    height:28px;
+    color: #403351;
+    font-size:14.67px;
+}
+
+#lbl_dashboardMenu_dashboardDescription {
+    -ms-grid-row: 3;
+}
+
+#div_dashboardMenu_dashboardDescription {
+    -ms-grid-row: 4;
+}
+
+#lbl_dashboardMenu_error {
+    -ms-grid-row: 5;
+}
+
+#btn_dashboardMenu_apply {
+    -ms-grid-row: 6;
+    width:92px;
+}
+
+#txt_dashboardMenu_dashboardName:hover {
+    color: #403351;
+}
+
+#txt_dashboardMenu_dashboardDescription {
+    min-width:200px; 
+    width:calc(100% - 29.5px);
+    font-size:14.67px;
+    overflow-y:auto;
+}

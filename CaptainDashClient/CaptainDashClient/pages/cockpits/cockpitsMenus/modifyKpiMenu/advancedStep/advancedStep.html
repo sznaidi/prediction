@@ -1,0 +1,61 @@
+﻿<!-------------------------------
+-- Author : [M.C]
+-- Creation date : 30/01/2013
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>modify Kpi menu : advanced configurations step</title>
+    <link href="/pages/cockpits/cockpitsMenus/modifyKpiMenu/advancedStep/advancedStep.css" rel="stylesheet" />
+    <script src="/pages/cockpits/cockpitsMenus/modifyKpiMenu/advancedStep/advancedStep.js"></script>
+    </head>
+    <body>
+      <div class="advancedConf" data-win-res="{textContent: 'lbl_modifyKpi_advancedConfiguration'}"></div>
+    <div id="div_modifyKpiAdvanced_step" class="rightMenuContentSeparatedDivs">
+
+        <div id="div_modifyKpiAdvanced_gaFilters">
+            <div class="rightMenuText" id="mediumLabel" data-win-res="{textContent: 'mediumLabel'}"></div>
+            <select id="slct_modifyKpiAdvanced_medium"></select>
+            <div class="rightMenuText" id="div_modifyKpiAdvanced_containerMedium">
+                <div id="lbl_modifyKpiAdvanced_medium"></div>
+                <div id="btn_modifyKpiAdvanced_deleteMedium">
+                    <img src="/images/rightMenu/deleteFilter.png" />
+                </div>
+            </div>
+            <div class="rightMenuText" id="geographyLabel" data-win-res="{textContent: 'geographyLabel'}"></div>
+            <select id="slct_modifyKpiAdvanced_geoFilter"></select>
+            <div class="rightMenuText" id="div_modifyKpiAdvanced_containerGeo">
+                <div id="lbl_modifyKpiAdvanced_geoFilter"></div>
+                <div id="btn_modifyKpiAdvanced_deleteGeoFilter">
+                    <img src="/images/rightMenu/deleteFilter.png" />
+                </div>
+            </div>
+        </div>
+
+        <div id="div_modifyKpiAdvanced_simpleConf">
+            <div id="div_modifyKpiAdvanced_simpleConfGrids" style="-ms-grid-columns:1fr">
+                <div style="width: 111px; height: 33px; -ms-grid-column: 1; width: 100%; margin-top: 0%" class="rightMenuText" data-win-res="{textContent: 'lbl_modifyKpi_frequencyRight'}">
+                </div>
+                <div id="slct_modifyKpiAdvanced_frequency" dataSrc="" class="selectBox">
+                    <div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div> 
+                </div>
+                <div style="-ms-grid-column: 3; height: 33px; margin-top: 0%; display:none; visibility:hidden;" class="rightMenuText" data-win-res="{textContent: 'lbl_modifyKpi_compareToRight'}">
+                </div>
+                <select id="slct_modifyKpiAdvanced_compareTo" style="display:none; visibility:hidden;">
+                </select>
+            </div>
+            <div id="div_modifyKpiAdvanced_calculation" style="display:none; visibility:hidden;">
+                <div id="lbl_modifyKpiAdvanced_calculation" class="rightMenuText" data-win-res="{textContent: 'lbl_modifyKpi_calculationRight'}">
+                </div>
+                <select id="slct_modifyKpiAdvanced_calculation"></select>
+            </div>
+            <div style="-ms-grid-row: 2" id="btn_modifyKpiAdvanced_apply">
+                <button class="rightMenuBtn" id="btn_modifyKpiAdvanced_applyBtn" data-win-res="{textContent: 'btn_modifyKpiAdvanced_applyBtn'}">
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

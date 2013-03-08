@@ -1,0 +1,113 @@
+﻿<!---------------------------------
+-- Author : [S.H]
+-- Creation date : 05/02/2013
+-------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explorer </title>
+    <link href="/pages/dataExplorer/dataExplorer.css" rel="stylesheet" />
+    <link href="/pages/dataExplorer/legend/legend.css" rel="stylesheet" />
+    <link href="/pages/dataExplorer/grid/grid.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!--Default explorer page-->
+    <div id="div_explorer_DefaultPage" class="pageTemplate">
+        <div class="topPage">
+            <button id="backbuttonDefault" class="win-backbutton" aria-label="Back"></button>
+            <div id="div_explorer_DefaultTopPage_label" class="topPageLabel" data-win-res="{textContent: 'div_explorer_DefaultTopPage_label'}"></div>
+        </div>
+
+        <div class="bodyPage">
+            <div class="filterPage">
+                <div id="div_dataExplorer_headerDefaultPage">
+                  <div id="div_explorer_DefaultTopPage_text1"  data-win-res="{textContent: 'div_explorer_DefaultTopPage_text1'}"></div>
+                    <div id="div_explorer_DefaultTopPage_text2" data-win-res="{textContent: 'div_explorer_DefaultTopPage_text2'}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Explorer page-->
+    <div id="div_explorer_fullPage" class="pageTemplate">
+        <div class="topPage">
+            <button id="backbuttonFul" class="win-backbutton" aria-label="Back"></button>
+            <div class="topPageLabel" id="div_explorer_topPage_labelContainer">
+                <div id="div_explorer_topPage_label" data-win-res="{textContent: 'div_explorer_topPage_label'}"></div>
+                <div id="div_explorer_topPage_labelExploration"></div>
+            </div>
+        </div>
+
+        <div class="bodyPage" style="overflow-x: scroll;">
+            <!--Header content page-->
+            <div class="filterPage">
+                <div id="div_dataExplorer_headerPage">
+                    <div id="div_dataExplorer_explorationsHeader">
+                        <div id="div_dataExplorer_periods" class="headerStyle">
+                            <div id="div_dataExplorer_selectedPeriod">
+                            </div>
+                            <div id="div_dataExplorer_periodeToCompare">
+                            </div>
+                            <div id="div_dataExplorer_flyoutAgregation">
+                                <div id="lbl_dataExplorerPage_currentFrequency"></div>
+                                <div id="btn_dataExplorerPage_frequency"></div>
+                            </div>
+                        </div>
+                        <div id="div_dataExplorer_stackedLogo">
+                        </div>
+                        <div id="div_dataExplorer_tooltipsContainer">
+                        </div>
+                    </div>
+                    <div id="div_dataExplorer_legendTitle" class="headerStyle" data-win-res="{textContent: 'div_dataExplorer_legendTitle'}">
+                    </div>
+                    <div id="div_dataExplorer_gridTitle" class="headerStyle" data-win-res="{textContent: 'div_dataExplorer_gridTitle'}">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content page-->
+            <div id="div_dataExplorer_contentPage">
+                <div id="div_dataExplorer_chartContent">
+                    <div id="div_dataExplorer_Container">
+                    </div>
+                </div>
+                <div id="div_dataExplorerSmall_legendTitle" class="headerStyle" data-win-res="{textContent: 'div_dataExplorerSmall_legendTitle'}">
+                </div>
+                <div id="div_dataExplorerSnap_chartContent">
+                    <svg id="smallChart"></svg>
+                </div>
+                <div id="div_dataExplorer_legend">
+                    <div id="div_dataExplorer_legendContainer">
+                    </div>
+                </div>
+                <div id="div_dataExplorer_grid">
+                    <div id="div_dataExplorer_gridHeader">
+                    </div>
+                    <div id="div_dataExplorer_gridContent" style="height: 100%; width: 100%; -ms-grid-column: 1; -ms-grid-row: 2;" data-win-control="WinJS.UI.ListView" data-win-options="{layout:{type:WinJS.UI.ListLayout} ,selectionMode:'none',  selectionMode: 'none',tapBehavior: 'none'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom appBar in Explorer page-->
+    <div id="div_dataExplorer_bottomAppBar" data-win-control="WinJS.UI.AppBar" style="background-color: #EC715A; -ms-user-select: none;" aria-label="Command Bar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRate', label:'', icon:'url(/images/bottomAppBar/rate.png)', section:'selection'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdpinToCockpit',label:'',icon:'url(/images/bottomAppBar/pinToCockpit.png)',section:'selection'}">
+        </button>
+        <hr data-win-control="WinJS.UI.AppBarCommand" style="background-color: #ca5943;" data-win-options="{id:'separatorDataaExp',type:'separator',section:'selection'}" />
+
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdNewExploration',label:'',icon:'url(/images/bottomAppBar/newExploration.png)',section:'selection'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdPredict',label:'Predict',icon:'url(/images/bottomAppBar/listenAgain.png)',section:'global'}">
+         </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdChangePeriod',label:'',icon:'url(/images/bottomAppBar/changePeroid.png)',section:'global'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdNewSerie',label:'',icon:'url(/images/bottomAppBar/add.png)',section:'global'}">
+        </button>
+    </div>
+</body>
+</html>

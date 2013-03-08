@@ -1,0 +1,58 @@
+﻿<!---------------------------------
+-- Author : [A.A]
+-- Creation date : 21/01/2013
+--------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/pages/dashboards/dashboards.css" rel="stylesheet" type="text/css" />
+    <script src="/pages/dashboards/dashboardsServices/dashboardsServices.js"></script>
+    <script src="/pages/dashboards/dashboards.js"></script>
+</head>
+<body>
+    <div class="pageTemplate" id="dashboardsPage">
+        <div class="topPage">
+            <button class="win-backbutton" aria-label="Back"></button>
+            <div class="topPageLabel" id="lbl_dashboards_topPageLabel" data-win-res="{textContent: 'lbl_dashboards_topPageLabel'}"></div>
+        </div>
+
+        <div id="div_dashboards_content" class="bodyPage">
+            <div class="contentPage">
+                <div class="lv_dashboards" id="lv_dashboards" data-win-control="WinJS.UI.ListView" data-win-options="{swipeBehavior: 'select',selectionMode: 'single'}"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="template_dashboard" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="dashboard" data-win-bind="innerText: label;dataSrc: key;">
+        </div>
+    </div>
+
+    <div id="template_dashboard_item" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="dashboardItem">
+            <div class="lblTextDashboard" data-win-bind="innerText: description">
+            </div>
+            <div class="lblNumberDashboard" data-win-bind="innerHTML: count">
+            </div>
+            <div class="lblIndiceDashboard" data-win-bind="innerHTML: index">
+            </div>
+        </div>
+    </div>
+
+    <div id="template_group_item" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="groupItem" data-win-bind="groupKey: key">
+            <div class="lblGroup" data-win-bind="innerText: label;dataSrc:key;">
+            </div>
+        </div>
+    </div>
+    <div id="div_dashboards_bottomAppBar" data-win-control="WinJS.UI.AppBar" style="background-color: #EC715A; -ms-user-select: none;" aria-label="Command Bar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDelete',label:'',icon:'url(/images/bottomAppBar/delete.png)',section:'global'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdModify',label:'',icon:'url(/images/bottomAppBar/modify.png)',section:'global'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdNewDashboard',label:'',icon:'url(/images/bottomAppBar/add.png)',section:'global'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRate', label:'', icon:'url(/images/bottomAppBar/rate.png)', section:'selection'}"></button>
+    </div>
+
+</body>
+</html>

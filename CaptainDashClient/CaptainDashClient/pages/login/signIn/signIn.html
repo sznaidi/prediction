@@ -1,0 +1,47 @@
+﻿<!---------------------------------
+-- Author : [A.A]
+-- Creation date : 17/01/2013
+---------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/pages/login/signIn/signIn.css" rel="stylesheet" />
+    <script src="/pages/login/signIn/signIn.js"></script>
+    <title>SignIn page</title>
+</head>
+<body>
+    <div id="div_signIn_signInContent">
+        
+        <div id="lbl_signIn" class="pageTitle" data-win-res="{textContent: 'lbl_signIn'}">
+            Sign in to find out what's happening
+            about your organization.
+        </div>
+
+        <div id ="lbl_signIn_emailLabel" class="imputTitle" data-win-res="{textContent: 'lbl_signIn_emailLabel'}">Email</div>
+        <input id="txt_signIn_emailAdress" tabindex=1 type="email"/>
+        <div id ="lbl_signIn_emailAdressError" class="rightMenuErrorText"></div>
+
+        <div id ="lbl_signIn_passwordLabel" class="imputTitle" data-win-res="{textContent: 'lbl_signIn_passwordLabel'}">Password</div>
+        <input id="txt_signIn_password" tabindex=2 type="password"/>
+        <div id ="lbl_signIn_passwordError" class="rightMenuErrorText"></div>
+
+        <div class="div_signIn_buttons">
+            <button id="btn_signIn_signIn" class="loginBtn" data-win-res="{textContent: 'btn_signIn_signIn'}">Sign in</button>
+            <button id="btn_signIn_register" data-win-res="{textContent: 'btn_signIn_register'}">Register</button>
+            <div id="prog_signIn_loadingRing">
+                <progress></progress>
+            </div>
+        </div>
+
+        <div id="div_signIn_forgotPassword">
+            <a id="hlink_signIn_forgotPassword" class="hlink_signIn" data-win-res="{textContent: 'hlink_signIn_forgotPassword'}">Forgot password ?</a>
+        </div>
+
+        <div id="div_signIn_getFullProfil">
+            <a id="hlink_signIn_getFullProfil" class="hlink_signIn" data-win-res="{textContent: 'hlink_signIn_getFullProfil'}">Get full Captain Dash profile</a>
+        </div>
+
+    </div>
+</body>
+</html>

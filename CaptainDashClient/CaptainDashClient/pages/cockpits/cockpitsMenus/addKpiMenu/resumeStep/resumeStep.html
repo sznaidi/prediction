@@ -1,0 +1,66 @@
+﻿<!-------------------------------
+-- Author : [A.A]
+-- Creation date : 28/01/2013
+------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add Kpi menu : resume step</title>
+        <link href="/pages/cockpits/cockpitsMenus/addKpiMenu/resumeStep/resumeStep.css" rel="stylesheet" />
+        <script src="/pages/cockpits/cockpitsMenus/addKpiMenu/resumeStep/resumeStep.js"></script>
+    </head>
+    <body>
+        
+ <div id="addKpiResumeStep">
+     
+     <!--[A.A]: Resume content Grid-->
+     <div class="addKpiResumeDiv"> 
+         <div class="lblResume" style="-ms-grid-row:1; -ms-grid-column:2;" data-win-res="{textContent: 'lbl_modifyKpi_resume'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:2;" id="lbl_addKpi_connector"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:2;" data-win-res="{textContent: 'lbl_modifyKpi_connectorRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:3;" id="lbl_addKpi_account"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:3;" data-win-res="{textContent: 'lbl_modifyKpi_accountRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:4;" id="lbl_addKpi_metric"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:4;" data-win-res="{textContent: 'lbl_modifyKpi_metricRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:5;" id="lbl_addKpi_filter"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:5;" data-win-res="{textContent: 'lbl_modifyKpi_filterRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:6;" id="lbl_addKpi_frequency"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:6;" data-win-res="{textContent: 'lbl_modifyKpi_frequencyRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:7; display:none;" id="lbl_addKpi_compareTo"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:7; display:none;" data-win-res="{textContent: 'lbl_modifyKpi_compareToRight'}"></div>
+         <div class="lblResumeLeft" style="-ms-grid-row:8; display:none;" id="lbl_addKpi_calculation"></div>
+         <div class="lblResumeRight" style="-ms-grid-row:8; display:none;" data-win-res="{textContent: 'lbl_modifyKpi_calculationRight'}"></div>
+     </div>
+
+     <!--[A.A]: Go to advanced configurations-->
+     <div class="lblResumeAdvanced" id="lbl_addKpi_advanced">
+         <div class="lbl_goToAdvanced" data-win-res="{textContent: 'lbl_modifyKpi_advancedConfiguration'}"></div>
+         <div class="btn_goToAdvanced">></div>
+     </div>
+
+     <!--[A.A]: Complete kpi params Grid-->
+     <div class="addKpiToComplete">
+         <div style="-ms-grid-row:1; -ms-grid-column:2; -ms-grid-column-align: center;"><img src="/images/rightMenu/separator.png"/></div>
+         <div class="rightMenuText" style="-ms-grid-row:2; -ms-grid-column:2;" data-win-res="{textContent: 'lbl_modifyKpi_dashboard'}"></div>
+         <div style="-ms-grid-row:3; -ms-grid-column:2;"><div id="slct_addKpi_dashboard" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div></div>
+         <div class="rightMenuText" style="-ms-grid-row:4; -ms-grid-column:2;"  data-win-res="{textContent: 'lbl_modifyKpi_group'}"></div>
+         <div id="div_selectGroupContainer" style="-ms-grid-row:5; -ms-grid-column:2;"><div id="slct_addKpi_group" dataSrc="" class="selectBox"><div class="div_titleItem_select"></div><div class="div_arrowItem_select"></div></div></div>
+         <div id="div_newGroupContainer" style="-ms-grid-row:5; -ms-grid-column:2; -ms-grid-column-align:start; width:calc(100% - 40px)"><input id="txt_addKpi_group" type="text" maxlength="30" /></div>
+         <div class="btn_rightMenu_back" id="btn_addKpi_groupBack"></div>
+         <div class="rightMenuErrorText" id="lbl_addKpi_groupError"></div>
+         <div class="rightMenuText" style="-ms-grid-row:7; -ms-grid-column:2;" data-win-res="{textContent: 'lbl_modifyKpi_name'}"></div>
+         <div style="-ms-grid-row:8; -ms-grid-column:2;"><input id="txt_addKpi_kpiTitle" type="text" /></div>
+         <div class="rightMenuErrorText" style="-ms-grid-row:9; -ms-grid-column:2;" id="lbl_addKpi_titleError"></div>
+         <div style="-ms-grid-row:10; -ms-grid-column:2; font-size: 11pt; font-family: 'Segoe UI'; color: #A49BB0;" data-win-res="{textContent: 'lbl_modifyKpi_displayInTile'}"></div>
+         <div style="-ms-grid-row:11; -ms-grid-column:2;">
+             <div data-win-control="WinJS.UI.ToggleSwitch" id="tgl_addKpi_displayInTile" data-win-options="{labelOn: 'On', labelOff: 'Off'}"></div>
+         </div>
+         <div style="-ms-grid-row:12; -ms-grid-column:2;">
+             <button id="btn_addKpi_addKpi" class="rightMenuBtn" style="width:200px;" data-win-res="{textContent: 'btn_addKpi_addKpi'}"></button>
+         </div>
+     </div>
+
+ </div>
+    </body>
+</html>

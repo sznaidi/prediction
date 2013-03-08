@@ -1,0 +1,58 @@
+﻿/* ------------------- Account Page -------------------- */
+/*#atAccountPage {
+    display: none;
+}*/
+
+    #atAccountPage > .rightMenuCenteredDiv {
+        -ms-grid-rows: 20px 50px 20px 50px 20px 41px 64px 40px 30px;
+    }
+
+
+#lbl_atAccount_Login {
+    -ms-grid-row: 1;
+}
+
+#txt_atAccount_Login {
+    -ms-grid-row: 2;
+}
+
+#lbl_atAccount_Password {
+    -ms-grid-row: 3;
+}
+
+#txt_atAccount_Password {
+    -ms-grid-row: 4;
+    height:36px;
+    width: 256px;
+    border: none;
+}
+
+#lbl_atAccount_Token {
+    -ms-grid-row: 5;
+}
+
+#txt_atAccount_Token {
+    -ms-grid-row: 6;
+}
+
+#url_atAccount_mailto {
+    -ms-grid-row: 7;
+    font-size: 8.2pt;
+    line-height: 25pt;
+    width: 100%;
+    font-family: Segoe UI;
+    visibility: visible;
+}
+
+#btn_atAccount_Next {
+    -ms-grid-row: 8;
+}
+
+#lbl_atAccount_Error {
+    -ms-grid-row: 9;
+}
+
+
+#url_atAccount_mailto > a{
+    color: #FAF8EA;
+}

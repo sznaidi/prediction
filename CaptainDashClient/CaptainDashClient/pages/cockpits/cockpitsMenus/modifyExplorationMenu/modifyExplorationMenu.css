@@ -1,0 +1,20 @@
+﻿#modifyExploration {
+    display: -ms-grid;
+    -ms-grid-rows: 20px 60px 20px 50px 20px 20px 40px 25px 25px auto 50px;
+    -ms-grid-columns: 11.9% 1fr 11.9%;
+}
+
+
+#btn_modifyExploration_groupBack {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-align: end;
+    width: 32px;
+    margin-left: 8px;
+    margin-top: 6px;
+    display: none;
+}
+
+#item2X1, #item3X1, #item1X2 {
+
+}

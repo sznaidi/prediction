@@ -1,0 +1,647 @@
+﻿/* ---------- [A.A] RightMenu CSS ---------- */
+
+.rightMenu {
+    height: 100%;
+    right: 0%;
+    width: 24.6%;
+    position: fixed;
+    top: 0px;
+    visibility: hidden;
+    background-color: #403351;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+    z-index: 2;
+}
+
+@media screen and (-ms-view-state: filled) {
+    .rightMenu {
+        width: 32.8%;
+        right:-8.2%;
+    }
+}
+
+.rightMenuDiv {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    height: 100%;
+    width: 100%;
+    -ms-grid-rows: 11.7% 7.6% 1fr;
+    -ms-grid-columns: 11.9% 1fr 11.9%;
+}
+
+.rightMenuHeader {
+    display: -ms-grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-columns: 15% 1fr;
+    -ms-grid-rows: 34% 1fr;
+    -ms-grid-row-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.rightMenuMarginTop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+}
+
+.btn_rightMenu_back {
+    display: -ms-grid;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    width: 32px;
+    height: 32px;
+    margin-top: 2px;
+    background-image: url('/images/rightMenu/rightMenuBackBtn.png');
+    background-repeat: no-repeat;
+}
+
+    .btn_rightMenu_back:hover {
+        background-image: url('/images/rightMenu/rightMenuBackBtnHover.png');
+    }
+
+    .btn_rightMenu_back:active {
+        background-image: url('/images/rightMenu/rightMenuBackBtnActive.png');
+    }
+
+.rightMenuTitle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    font-family: Segoe UI Light;
+    color: #ec715a;
+    font-size: 20pt;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    min-width: 250px;
+}
+
+.rightMenuSubtitle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    font-family: Segoe UI Light;
+    -ms-grid-row-align: center;
+    color: #A49BB0;
+    font-size: 20pt;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+}
+
+.rightMenuContent {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span:3;
+    height: 100%;
+    width: 100%;
+    display:-ms-grid;
+    -ms-grid-columns:1fr;
+    -ms-grid-rows:1fr;
+}
+
+.rightMenuContentSeparatedDivs {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:11.9% 1fr 11.9%;
+    -ms-grid-rows:1fr;
+}
+
+.rightMenuContentDiv {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display:-ms-grid;
+    -ms-grid-columns:1fr;
+    -ms-grid-rows:1fr;
+}
+
+.rightMenuCenteredDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; 
+    display:-ms-grid;
+    margin-top:25px;
+    -ms-grid-columns:1fr;
+}
+
+
+/*  -------------------------------------------- Controls  -----------------------------------------------*/
+
+
+/*----------- Loading Ring RightMenu -----------*/
+.rightMenuLoadingDiv {
+    display:none;
+    width: 100%;
+    height: 100%;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-rows:1fr;
+    -ms-grid-columns:1fr;  
+    position:relative; 
+}
+
+.rightMenu progress::-ms-fill {
+    -ms-animation-name: -ms-ring;
+}
+
+.rightMenu progress:indeterminate {
+    width: 40%;
+    height: 40%; 
+    margin-top: 17%;
+    margin-left: 30%;
+    color: #EC715A;
+    -ms-grid-row:1;
+    -ms-grid-column:1;
+}
+
+.rightMenuCoverControls {
+    display:none;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 10; 
+    opacity: 0.001;
+    background-color: white;
+}
+
+/*----------- End Loading Ring -----------*/
+
+
+
+/*----------- ListView RightMenu -----------*/
+.rightMenuLv {
+    height: 100%;
+    width: 100%;
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+
+.rightMenuLvItems {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; 
+    -ms-grid-row-align: center;
+}
+
+
+    .rightMenuLv :not(.win-footprint).win-container {
+        background-color: #403351;
+    }
+
+    .rightMenuLv .win-vertical .win-item {
+        cursor: default;
+        overflow: hidden;
+        width: 100%;
+        height: 70px;
+
+    }
+
+    .rightMenuLv > .win-vertical .win-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .rightMenuLv .win-item:hover {
+        background-color: #4b3d5d;
+    }
+
+    .rightMenuLv .win-container:hover {
+        background-color: #4b3d5d;
+        outline: rgba(255, 255, 255, 0) solid 0px;
+    }
+
+    .rightMenuLv .win-container.win-selected:hover {
+        background-color: #4b3d5d;
+    }
+
+    .rightMenuLv > .win-vertical .win-container {
+        margin:0px;
+    } 
+/*----------- End ListView RightMenu -----------*/
+
+
+
+/*----------- InputText RightMenu -----------*/
+.rightMenu input[type=text] {
+    background-color: rgb(213, 209, 203);
+    /*color: rgb(159, 152, 159);*/
+    color: rgb(0, 0, 0);
+    height: 32px; 
+    width: calc(100% - 4px); 
+    padding-left: 0px;
+    margin-top: 5px; 
+    font-size: 11pt; 
+    font-family: Segoe UI;
+    -ms-grid-row-align: center;
+}
+
+.rightMenu input[type=text]:hover {
+    background-color: rgb(232, 229, 219);
+    color: rgb(138, 130, 142);
+}
+
+.rightMenu input[type=text]:focus {
+    background-color: rgb(250, 248, 234);
+}
+
+.rightMenu input[type=text]:active {
+    background-color: rgb(250, 248, 234);
+}
+
+input::-ms-clear, input::-ms-reveal {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.rightMenu input[type=text]::-ms-clear:hover, .rightMenu input[type=text]::-ms-reveal:hover {
+    background-color: rgb(222, 219, 211);
+}
+
+.rightMenu input[type=text]::-ms-clear:hover:active, .rightMenu input[type=text]::-ms-reveal:hover:active {
+    background-color: rgb(64, 51, 81);
+    color: rgb(255, 255, 255);
+}
+
+
+::selection {
+    background-color: #ebc24b;
+    color: #403351;
+}
+/*----------- InputText RightMenu -----------*/
+
+
+/*----------- TextArea RightMenu -----------*/
+.rightMenu textarea {
+    background-color: rgb(213, 209, 203);
+    color: #403351;
+    font-size: 11pt; 
+    font-family: Segoe UI;
+}
+
+.rightMenu textarea:hover {
+    background-color: rgb(232, 229, 219);
+    color: #403351;
+}
+
+.rightMenu textarea:focus {
+    background-color: rgb(250, 248, 234);
+}
+
+.rightMenu textarea:active {
+    background-color: rgb(250, 248, 234);
+}
+/*----------- TextArea RightMenu -----------*/
+
+
+/*----------- InputText RightMenu -----------*/
+.rightMenuText {
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#faf8ea;
+}
+
+.rightMenuErrorText {
+    font-size:10.5pt;
+    font-family: 'Segoe UI';
+    color:#EC715A;
+    z-index: -1;
+}
+/*----------- InputText RightMenu -----------*/
+
+
+
+/*----------- Button RightMenu -----------*/
+.rightMenuBtn {
+    background-color: #EC715A; 
+    border: 2px solid #f28c79; 
+    color: #FAF8EA;
+    height: 32px; 
+    width:100px; 
+    font-size: 11pt;
+    padding-top:1px;
+}
+
+.rightMenuBtn:hover { 
+    background-color: #ca5943; 
+    border: 2px solid #ec715a;
+    color: #FAF8EA;
+}
+
+.rightMenuBtn:hover:active { 
+    background-color: #ca5943; 
+    border: 0px;
+    color: #FAF8EA;
+}
+.rightMenuBtn:focus {
+    outline:none;
+}
+/*----------- End Button -----------*/
+
+
+
+/* ---------- Tile size ----------*/
+.blocksDiv {
+    display: -ms-grid; 
+    -ms-grid-columns: 1fr 2% 1fr;
+}
+
+.selectableItem {
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(75, 61, 93);
+    background-color: rgb(75, 61, 93);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.unselectableItem {
+    background-color: #403351;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(75, 61, 93);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.horizontalSeparator {
+    height: 10px;
+    width: 100%;
+    background-color: #403351;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.verticalSeparator {
+    height: 52px;
+    width: 11px;
+    background-color: #403351;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ---------- end Tile Size ----------*/
+
+
+
+/* ---------- DropDown List ----------*/
+select { 
+    background-color: rgb(217,214,220);
+    font-size:11pt;
+    font-family: 'Segoe UI';
+    color:#403351;
+    padding-left:0px;
+    height:35px;
+    padding-left:0px;
+    width:100%;
+}
+
+select:focus {
+    color: #403351;
+    background-color: #ffffcd;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+select:active {
+    color: #403351;
+    background-color: #ffffcd;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+select:hover {
+    color: #403351;
+    background-color: #ffffcd;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+select:focus option:hover {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+option:hover, select:focus option:hover {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+option:checked:hover, select:focus option:checked:hover {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+option:checked, select:focus option:checked {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+    option:hover:active, select:focus option:hover:active {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+
+option:checked, select:focus::-ms-value {
+    color: #403351;
+    background-color: #ebc24b;
+        font-family: 'Segoe UI';
+        font-size: 11pt;
+}
+/* ---------- end DropDown List ----------*/
+
+
+/* ---------- Begin Resume page ----------*/
+.lblResume {
+    font-size: 20pt; 
+    font-family: Segoe UI Semilight; 
+    color: #a49bb0;
+    -ms-grid-row-align:center;
+}
+
+.lblResumeLeft {
+    color: #8b7d9e;
+    -ms-grid-column-align: start;
+    -ms-grid-column:2;
+    font-size:10.5pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width:100%;
+}
+
+.lblResumeRight {
+    color: #625572;
+    -ms-grid-column-align: end;
+    -ms-grid-column:3;
+    font-size:10.5pt;
+}
+
+.lblResumeAdvanced {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    color: rgb(164, 155, 176);
+    font-family: 'Segoe UI Semilight';
+    font-size: 15pt;
+    display: -ms-grid;
+    -ms-grid-columns: 11.9% 1fr 15px 11.9%;
+    width: 100%;
+}
+/* ---------- End Resume page ----------*/
+
+
+/* ---------- Begin ToogleSwitch ----------*/
+.win-toggleswitch .win-switch {
+    margin-left:35px;
+}
+
+.win-toggleswitch .win-switch::-ms-track {
+    border-color:#808080;
+    background-color:#372b47;
+}
+
+.win-toggleswitch .win-switch::-ms-track {
+    background-color:#372b47;
+}
+
+.win-toggleswitch .win-switch::-ms-fill-upper {
+    border-color:#808080;
+    background-color: #372b47;
+}
+
+.win-toggleswitch .win-switch:hover::-ms-fill-upper {
+    background-color: #372b47;
+}
+
+.win-toggleswitch .win-switch:active::-ms-fill-upper {
+    background-color:  #372b47;
+}
+
+.win-toggleswitch .win-switch:disabled::-ms-fill-lower,
+.win-toggleswitch .win-switch:disabled::-ms-fill-upper {
+    background-color: #372b47;
+}
+
+input[type=range], input[type=range]::-ms-track {
+    background-color: #faf8ea;
+}
+
+input[type=range]::-ms-fill-lower {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:hover::-ms-fill-lower {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:active::-ms-fill-lower {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:not(active)::-ms-fill-lower {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:disabled::-ms-fill-lower {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]::-ms-fill-upper {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:hover::-ms-fill-upper {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:active::-ms-fill-upper {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:not(active)::-ms-fill-upper {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]:disabled::-ms-fill-upper {
+    background-color: rgb(236,113,90);
+}
+
+input[type=range]::-ms-thumb {
+    background-color: #faf8ea;
+}
+
+input[type=range]:disabled::-ms-thumb {
+    background-color: #faf8ea;
+}
+
+input[type=range]::-ms-ticks-before,
+input[type=range]::-ms-ticks-after {
+   background-color: #faf8ea;
+}
+
+/* ---------- End ToogleSwitch ----------*/
+
+/* ---------- start blocks ----------*/
+
+.itemDisplaySelect {
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(75, 61, 93);
+    background-color: rgb(75, 61, 93);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemDisplaySelect:active {
+    background-color: #8b7d9e;
+}
+
+.itemDisplaySelected {
+    background-color: #403351;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(75, 61, 93);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemSeparator {
+    height: 10px;
+    width: 100%;
+    background-color: #403351;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemSeparatorVertical {
+    height: 52px;
+    width: 8px;
+    background-color: #403351;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ---------- end blocks ----------*/

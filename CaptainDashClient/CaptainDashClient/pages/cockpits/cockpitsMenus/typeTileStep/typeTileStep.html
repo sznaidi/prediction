@@ -1,0 +1,26 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/pages/cockpits/cockpitsMenus/typeTileStep/typeTileStep.css" rel="stylesheet" />
+    <script src="/pages/cockpits/cockpitsMenus/typeTileStep/typeTileStep.js"></script>
+</head>
+<body>
+
+    <div id="template_lvTypeTile" data-win-control="WinJS.Binding.Template">
+        <div class="rightMenuContentSeparatedDivs" style="">
+            <div class="rightMenuLvItems" data-win-bind="innerText: label;dataSrc:key;">
+            </div>
+        </div>
+    </div>
+
+    <div id="div_cockpit_TypeTile" class="rightMenuContentDiv">
+        <div id="lv_TypeTiles" class="rightMenuLv" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:template_lvTypeTile, layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none'}"></div>
+    </div>
+
+
+
+</body>
+</html>

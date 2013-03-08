@@ -1,0 +1,69 @@
+﻿<!----------------------------------
+-- Author : [S.H]
+-- Creation date : 18/01/2012
+---------------------------------->
+<!DOCTYPE html>
+<html>
+    <head>
+         <link href="/pages/login/registerPage/registerPage.css" rel="stylesheet" />
+         <script src="/pages/login/registerPage/registerPage.js"></script>
+        <title> Register page </title>
+    </head>
+    <body>
+         <div class="contentBackBtn">
+              <div id="btn_register_back" class="btn_login_back" >
+              </div>
+         </div>
+         <div id="div_register_registerPageContent">
+           <div id="txt_registerPage" class="pageTitle">
+               Sign up to find out what's happening, 
+               <br />
+               about your organisation.
+           </div>
+           <div id="inputFields">
+            <div id="leftPart">
+                  <div id ="lbl_register_firstNameLabel" class="imputTitle" data-win-res="{textContent: 'lbl_register_firstNameLabel'}">
+                  </div>
+                  <input id="txt_register_firstNameValue" tabindex=1 type="text"/>
+
+                  <div id ="txt_register_nameError" class="rightMenuErrorText"> </div>
+
+                  <div id ="lbl_register_pswLabel" class="imputTitle" data-win-res="{textContent: 'lbl_signIn_passwordLabel'}">
+                  </div>
+                  <input id="txt_register_pswValue" tabindex=3 type="password"/>
+                   
+                  <div id ="txt_register_pswError" class="rightMenuErrorText"></div>
+
+                  <div id ="lbl_register_emailLabel" class="imputTitle" data-win-res="{textContent: 'lbl_signIn_emailLabel'}">
+                  </div>
+                  <input id="txt_register_emailAdress" tabindex=5 type="email"/>
+
+                  <div id ="txt_register_emailError" class="rightMenuErrorText"></div>
+
+             <div id="div_register_registerButton">   
+               <button id="btn_register_register" class="loginBtn" data-win-res="{textContent: 'btn_signIn_register'}"></button>
+               <div id="prog_register_loadingRing">
+                <progress></progress>
+               </div>
+             </div>  
+                          
+        </div>
+
+            <div id="rightPart">
+                  <div id ="lbl_register_lastNameLabel" class="imputTitle" data-win-res="{textContent: 'lbl_register_lastNameLabel'}">
+                  </div>
+                  <input id="txt_register_lastNameValue" tabindex=2 type="text"/>
+
+                  <div id ="lbl_register_confirmPswLabel" class="imputTitle" data-win-res="{textContent: 'lbl_register_confirmPswLabel'}">
+                  </div>
+                  <input id="txt_register_confirmPswValue" tabindex=4 type="password"/>
+
+                  <div id ="lbl_register_confirmEmailLabel" class="imputTitle" data-win-res="{textContent: 'lbl_register_confirmEmailLabel'}">
+                  </div>
+                  <input id="txt_register_confirmEmail" tabindex=6 type="email"/>              
+            </div>
+              
+         </div>
+       </div>
+    </body>
+</html>
